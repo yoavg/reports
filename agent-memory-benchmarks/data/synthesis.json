@@ -1,0 +1,43 @@
+{
+ "pass": "synthesis-v1",
+ "when": "2026-09-12",
+ "by": "main session (strong model), re-reading the rows behind each pooled claim",
+ "entries": [
+  {
+   "claim": "619 of 995 in-charter benchmarks (62.2%) never define the long-horizon / long-term construct they test.",
+   "because": "Each row is a per-paper extraction with polarity present|absent, where an 'absent' row is a positive claim carrying a verbatim span showing what the paper does INSTEAD \u2014 most commonly using 'long-term'/'long-horizon' as an unexamined motivating premise. Five independent workers reported this same pattern unprompted in their own words.",
+   "unless": "The extractors' bar for 'a definition' is stricter than a reader's: a paper pinning the construct only in a figure caption or appendix the targeted read missed would be scored absent. Re-read 20 'absent' rows at full depth against a looser bar before treating 62% as exact.",
+   "basis_note": "n=995 rows at 100% extraction coverage; 86.2% grounded in full text. The fulltext stratum reads 42.2% present vs 10.2% for the 137 bodiless rows, so the pooled figure is depth-mixed and the fulltext number is the better estimate of the field."
+  },
+  {
+   "claim": "Only 109 of 995 benchmarks (11.0%) state a definition outright; of those that define it at all, 145 do so by operational threshold and 122 by contrast with a shorter setting.",
+   "because": "definition_kind is a kind-typed field, so each record had to say WHICH kind of definition it found rather than tick a boolean; the three kinds separated in the rows without force-fitting.",
+   "unless": "The boundary between 'operational-threshold' and 'contrastive' is a judgement call \u2014 a threshold is often stated by contrast. Treat the two oblique kinds as one class if that distinction is load-bearing.",
+   "basis_note": "Counted over the 376 rows with polarity=present; the three kinds sum to that figure."
+  },
+  {
+   "claim": "Example length is recoverable for 78.1% of benchmarks when the paper body is readable, against 4.4% from abstracts alone.",
+   "because": "The same schema and packet ran over both strata; the only systematic difference is whether a cached body existed. Two independently-built full-text waves landed at 78.2% and 84.3%, and a pre-registered 21-row abstract-depth control landed at 10%.",
+   "unless": "The strata are not randomly assigned \u2014 rows without a body are disproportionately web-curated entries with no paper at all, which may be genuinely less documented rather than merely less readable. The gap mixes an access effect with a real documentation-quality effect.",
+   "basis_note": "fulltext n=858, abstract n=137. Dataset size was excluded from this field by instruction and recorded separately."
+  },
+  {
+   "claim": "Benchmarks measure one example in 8 incommensurable currencies; the largest \u2014 agent steps / actions \u2014 accounts for only 21% of 1154 classified quantity mentions, and 15% are wall-clock time. Stated lengths span 1.2 to 120,000 discrete units and 0.004 to 188,340 hours (21.5 years).",
+   "because": "Units were open-coded per row, then folded into families by a codebook derived bottom-up from the corpus's own codes; 55 mentions (4.5%) resisted classification and ship as a labelled tail rather than hidden in an 'other' bucket.",
+   "unless": "A benchmark long on several axes contributes several mentions, so these are mention shares, not benchmark shares. The ladder extremes are single benchmarks and should be read as the range of the literature, not as typical values.",
+   "basis_note": "1154 classified mentions across 676 benchmarks that stated any length. Wall-clock values convert only within the time family; nothing converts across families."
+  },
+  {
+   "claim": "304 of 995 in-charter artifacts (31%) ship alongside a memory METHOD rather than as benchmark-first contributions, and 24 ship no artifact at all.",
+   "because": "The flag was assigned per-row from the body against a packet definition naming the test: is the paper's primary contribution the method or the evaluation artifact?",
+   "unless": "Papers shipping a strong benchmark AND a method are a genuine middle case; the flag collapses them toward method-origin, so this is an upper read of the method-origin share.",
+   "basis_note": "Flag counts are non-exclusive; a row may carry method-origin and unverified together. 168 rows are flagged unverified (released artifact unconfirmable from the text)."
+  },
+  {
+   "claim": "The corpus holds 973 distinct benchmark artifacts from 995 extracted rows, at 100% extraction coverage of the in-charter ring.",
+   "because": "Clustering keys on the normalized benchmark name but SPLITS a cluster whose members disagree on setting or sit more than three years apart \u2014 a guard against this corpus's measured name-overloading hazard (three distinct artifacts named 'MemoryBench', five named 'MemBench').",
+   "unless": "The guard splits on setting+year, so two different benchmarks sharing a name, a setting AND an era would still merge; conversely a benchmark legitimately spanning two settings could split.",
+   "basis_note": "22 name clusters were split by the guard. 0 corpusIds were double-extracted (validated). 40 rows raised the scope-flag escape hatch on reading."
+  }
+ ]
+}

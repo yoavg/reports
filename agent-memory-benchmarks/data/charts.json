@@ -1,0 +1,64 @@
+{
+ "length_unit_families": {
+  "agent steps / actions": 242,
+  "conversational turns": 217,
+  "tokens / text length": 213,
+  "wall-clock time": 176,
+  "sessions / episodes": 127,
+  "retrieved documents": 70,
+  "stored memory items": 55,
+  "tasks / trajectories": 54
+ },
+ "memory_construct": {
+  "long-horizon-state-tracking": 430,
+  "knowledge-update-conflict": 256,
+  "retrieval-over-persistent-store": 212,
+  "experience-reuse": 180,
+  "cross-session-personalization": 173,
+  "temporal-reasoning": 162,
+  "multi-session-recall": 148,
+  "forgetting": 107,
+  "procedural-skill-accumulation": 82,
+  "memory-security": 50,
+  "abstention-no-answer": 18
+ },
+ "setting": {
+  "dialogue-assistant": 194,
+  "tool-web-agent": 126,
+  "document-qa": 119,
+  "embodied-or-game": 105,
+  "coding-agent": 67,
+  "multi-agent": 43,
+  "other:knowledge-editing": 22
+ },
+ "artifact_kind": {
+  "benchmark": 690,
+  "dataset": 132,
+  "testbed-environment": 84,
+  "suite-of-benchmarks": 50,
+  "none-shipped": 24,
+  "leaderboard-or-harness": 15
+ },
+ "flags": {
+  "method-origin": 304,
+  "unverified": 168,
+  "mechanism-ambiguous": 43,
+  "no-paper-artifact": 37,
+  "non-llm-lineage": 25
+ },
+ "definition_kind": {
+  "operational-threshold": 145,
+  "contrastive": 122,
+  "explicit-stated": 109
+ },
+ "field_presence_by_depth": {
+  "example length": {
+   "full text": 78.1,
+   "abstract only": 4.4
+  },
+  "long-horizon definition": {
+   "full text": 42.2,
+   "abstract only": 10.2
+  }
+ }
+}
