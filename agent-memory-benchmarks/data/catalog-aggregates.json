@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-12",
+ "as_of": "2026-09-13",
  "frame": {
   "view": "core ring (in + relevant)",
   "version": "run2 substrate @2026-09-12",
@@ -455,42 +455,56 @@
   "summary_written": 995
  },
  "external_memory": {
-  "present": 548,
-  "absent": 447,
+  "present": 558,
+  "absent": 437,
   "whose": {
-   "retrieval-corpus": 144,
-   "agent-memory": 299,
-   "environment-state": 76
+   "agent-memory": 384,
+   "environment-state": 100,
+   "retrieval-corpus": 74
   },
   "kinds": {
-   "memory-module": 265,
-   "retrieval-index": 115,
-   "database": 94,
-   "scratchpad": 19,
-   "file-system": 29,
-   "memory-bank": 12,
+   "memory-module": 305,
+   "database": 97,
+   "knowledge-graph": 45,
+   "retrieval-index": 154,
+   "file-system": 64,
+   "vector-store": 31,
+   "memory-bank": 14,
+   "rag": 7,
+   "scratchpad": 22,
    "persistent-store": 3,
-   "vector-store": 21,
-   "knowledge-graph": 46,
-   "rag": 13,
-   "spatial-map": 1,
    "key-value-store": 19,
-   "interaction-log": 1,
-   "external-memory": 5,
-   "episodic-index": 1,
-   "skill-library": 4,
-   "log": 1,
-   "state-store": 1,
-   "file-based-memory": 1,
+   "web-search-index": 1,
+   "vector store": 1,
+   "key-value store": 2,
+   "knowledge graph": 1,
+   "retrieval index": 1,
+   "scene graph / world-state store": 1,
+   "environment-maintained state carried across steps": 1,
+   "filesystem": 1,
+   "environment-state": 2,
+   "skill-library": 5,
    "file-store": 1,
-   "web-search-index": 1
+   "state-store": 1,
+   "episodic-index": 1,
+   "external-memory": 1,
+   "LMS database": 1,
+   "per-KC KT belief store": 1,
+   "activity log": 1,
+   "user profile store": 1,
+   "spatial-map": 1,
+   "interaction-log": 1,
+   "file-based-memory": 1,
+   "log": 1,
+   "filesystem/project files": 1,
+   "desktop application state": 1
   },
   "decided_by": {
-   "sonnet-verified": 464,
-   "haiku-unverified": 521,
+   "sonnet-verified": 985,
    "gold (hand-read)": 10
   },
-  "verified_fraction": 0.476,
-  "method_note": "Two-pass, IN PROGRESS. A haiku first pass scored only 72% against 10 hand-read gold items on present/absent and 47.5% on the whose split; a sonnet verification pass is overturning ~34% of it. Rows marked sonnet-verified or gold are reliable; rows marked haiku-unverified are PROVISIONAL and a third of them are expected to change."
+  "verified_fraction": 1.0,
+  "method_note": "Two-pass, COMPLETE. Every row was read by a cheap first pass and then re-read by a stronger verification pass; 10 hand-read gold items, planted in every shard, anchor both. Measured per reading (the denominator that applies to an ordinary row, which is read once), the first pass agreed with gold on only 72% of present/absent calls and 60% of the whose split; verification overturned 318 of 985 rows it checked (32%). The published values are the verified ones. One gold item was itself corrected: SWE-bench's store was re-filed retrieval-corpus -> environment-state after 8 of 9 independent verifiers rejected the hand-read call.",
+  "overturn_rate_of_checked": 0.323
  }
 }
