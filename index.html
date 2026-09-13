@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+:root{--ground:#F6F7F4;--panel:#fff;--ink:#141816;--ink-2:#414A46;--ink-3:#6C7671;
+ --rule:#D7DCD5;--accent:#2C6B5B;--accent-ink:#1E4C41;--accent-soft:#E2EDE8}
+@media(prefers-color-scheme:dark){:root{--ground:#101412;--panel:#171C19;--ink:#E7EBE6;
+ --ink-2:#AFBAB4;--ink-3:#7E8A84;--rule:#2A322D;--accent:#6FBFA6;--accent-ink:#9AD5C1;--accent-soft:#1B2F28}}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;
+ margin:0;line-height:1.6;padding:0 20px}
+.wrap{max-width:760px;margin:0 auto;padding-block:56px 80px}
+h1{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:2.2rem;margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--ink-2);margin:0 0 40px;font-size:1.02rem}
+.card{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:22px;margin-bottom:18px}
+.card h2{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:1.4rem;margin:0 0 4px}
+.card .when{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
+.card p{margin:0 0 16px;color:var(--ink-2);font-size:.95rem}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.links a{display:inline-block;padding:8px 14px;border-radius:4px;text-decoration:none;
+ font-size:.88rem;font-weight:500;border:1px solid var(--rule);color:var(--ink-2);background:var(--ground)}
+.links a.primary{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
+.links a:hover{border-color:var(--accent)}
+.stats{display:flex;flex-wrap:wrap;gap:18px;margin:0 0 16px;font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--ink-3)}
+.stats b{display:block;font-size:1.15rem;color:var(--ink);font-weight:500}
+footer{color:var(--ink-3);font-size:.82rem;margin-top:40px}
+</style></head><body><div class="wrap">
+<h1>Reports</h1>
+<p class="sub">Research reports and the data behind them.</p>
+
+<div class="card">
+  <h2>Agent Memory Benchmarks</h2>
+  <p class="when">Corpus survey · 2026-09-12</p>
+  <div class="stats">
+    <span><b>973</b>benchmarks</span>
+    <span><b>3,314</b>screened</span>
+    <span><b>86%</b>read at full text</span>
+    <span><b>62%</b>never define "long horizon"</span>
+  </div>
+  <p>Every long-term-memory and long-horizon benchmark we could find for LLM agents, with each
+     one described in the authors' own words and ours — and a measurement of how little the field
+     agrees on what those words mean.</p>
+  <div class="links">
+    <a class="primary" href="agent-memory-benchmarks/index.html">Read the report</a>
+    <a href="agent-memory-benchmarks/catalog.html">Browse all 995 rows</a>
+    <a href="agent-memory-benchmarks/data/catalog.csv">catalog.csv</a>
+    <a href="agent-memory-benchmarks/data/coverage-verdict.md">Coverage boundary</a>
+  </div>
+</div>
+
+<footer>~80% estimated recall, and that is the optimistic read — see the coverage boundary before
+treating this as complete. Source: <a href="https://github.com/yoavg/reports">github.com/yoavg/reports</a></footer>
+</div></body></html>
