@@ -27,25 +27,26 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.4rem,3vw,1.95rem);
 .controls input{min-width:210px}
 .controls input:focus-visible,.controls select:focus-visible,th button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 #count{font-family:var(--mono);color:var(--muted);font-size:.78rem;font-variant-numeric:tabular-nums;margin-left:auto}
-.tblwrap{overflow-x:auto;margin-top:2px}
-table{border-collapse:collapse;width:100%;min-width:1180px;font-size:.855rem}
-thead th{position:sticky;top:53px;background:var(--bg);z-index:10;text-align:left;padding:0;border-bottom:2px solid var(--accent);white-space:nowrap}
-th button{all:unset;cursor:pointer;display:block;width:100%;padding:9px 12px 9px 0;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.tblwrap{margin-top:2px}
+@media (max-width:1040px){.tblwrap{overflow-x:auto}}
+table{border-collapse:collapse;width:100%;min-width:940px;font-size:.855rem;table-layout:fixed}
+thead th{position:sticky;top:var(--barh,56px);background:var(--bg);z-index:10;text-align:left;padding:0;border-bottom:2px solid var(--accent);white-space:nowrap;box-shadow:0 -1px 0 0 var(--bg),0 1px 0 0 var(--accent)}
+th button{all:unset;cursor:pointer;display:block;width:100%;padding:10px 12px 10px 0;white-space:normal;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
 th button:hover{color:var(--accent)}
 th button .ar{font-size:.7rem;color:var(--accent);margin-left:4px}
-td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line2);vertical-align:top}
+td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line2);vertical-align:top;overflow-wrap:anywhere}
 tbody tr:hover{background:var(--card)}
-.c-n{min-width:190px;max-width:250px}
+.c-n{width:16%}
 .c-n a{font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}
 .c-n a:hover{border-bottom-color:var(--accent);color:var(--accent)}
 .ttl{color:var(--muted);font-size:.75rem;line-height:1.35;margin-top:3px}
-.c-d{min-width:130px;color:var(--muted);font-size:.8rem}
-.c-y{width:52px;color:var(--muted);font-variant-numeric:tabular-nums}
-.c-g{min-width:280px;max-width:400px}
-.c-t{min-width:240px;max-width:340px;color:var(--muted);font-size:.82rem}
-.c-s{min-width:130px}
-.c-c{width:96px}
-.c-h{min-width:190px;max-width:250px}
+.c-d{width:10%;color:var(--muted);font-size:.8rem}
+.c-y{width:4.5%;color:var(--muted);font-variant-numeric:tabular-nums}
+.c-g{width:25%}
+.c-t{width:20%;color:var(--muted);font-size:.82rem}
+.c-s{width:9%}
+.c-c{width:6.5%}
+.c-h{width:9%}
 .mono{font-family:var(--mono);font-size:.78rem;line-height:1.4}
 .none{color:var(--ochre);font-style:italic;font-size:.8rem}
 .unit{display:block;font-family:var(--mono);font-size:.68rem;color:var(--muted);margin-top:3px}
@@ -65,7 +66,7 @@ tr.grp:hover td{background:var(--accent-soft)}
 .foot{margin:26px 0 0;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;max-width:82ch}
 .foot a{color:var(--accent)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-@media (max-width:620px){.wrap{padding-left:16px;padding-right:16px}#count{margin-left:0}thead th{top:96px}}
+@media (max-width:620px){.wrap{padding-left:16px;padding-right:16px}#count{margin-left:0}}
 </style>
 <div class="wrap">
 <h1>Benchmarks that make LLM agents juggle many goals — the catalogue</h1>
@@ -4951,5 +4952,14 @@ tr.grp:hover td{background:var(--accent-soft)}
   el.addEventListener('input',applyFilters);
  });
  applyFilters();
+
+ // The header must sit exactly below the sticky controls bar, whatever height it wraps to.
+ var bar=document.querySelector('.controls');
+ function syncBarHeight(){
+  document.documentElement.style.setProperty('--barh', Math.round(bar.getBoundingClientRect().height)+'px');
+ }
+ syncBarHeight();
+ window.addEventListener('resize',syncBarHeight);
+ if(window.ResizeObserver){new ResizeObserver(syncBarHeight).observe(bar);}
 })();
 </script>
