@@ -76,11 +76,11 @@ tr.grp:hover td{background:var(--accent-soft)}
 <p class="dek">All <b>480</b> benchmarks, datasets, environments and scenario suites published in <b>2025–2026</b> whose settings require an agent to pursue and track <em>multiple</em> goals and subgoals. Software-engineering and other code-centric domains are excluded by design. Complete as-of <b>2026-09-14</b>; the field moves fast, so treat it as stale after 6–8 weeks.</p>
 <p class="legend"><b>Reading the table.</b> <em>Goals to track</em> and <em>must keep track of</em> are extracted per paper from its own text. <em>Horizon</em> shows the paper's own figure in its own unit — and <span class="none">none stated</span> where the paper never quantifies one, which is the case for 334 of 480 entries. <em>Credit</em> records whether subgoal-level partial credit exists. <em>Cites</em> is the Semantic Scholar citation count with a per-month rate beside it &mdash; with 318 of 480 entries published in 2026, this column mostly measures <b>age, not quality</b>, and 126 entries sit at zero. Every name links to the paper.</p>
 
-<nav aria-label="Jump to domain"><a href="#grp-OS-computer-use">OS &amp; computer use</a><a href="#grp-business-office-enterprise">Business &amp; enterprise</a><a href="#grp-customer-service-dialogue">Service &amp; dialogue</a><a href="#grp-education-tutoring">Education &amp; tutoring</a><a href="#grp-embodied-household">Embodied &amp; robotics</a><a href="#grp-healthcare-clinical">Healthcare</a><a href="#grp-multi-agent-org">Multi-agent orgs</a><a href="#grp-open-ended-sandbox">Open-ended sandboxes</a><a href="#grp-open-world-game">Games &amp; IF</a><a href="#grp-personal-assistant-memory">Assistants &amp; memory</a><a href="#grp-scientific-discovery">Science</a><a href="#grp-tool-use-API">Tool &amp; API</a><a href="#grp-travel-and-constraint-planning">Planning &amp; travel</a><a href="#grp-web-GUI">Web &amp; GUI</a></nav>
+<nav aria-label="Jump to domain"><a href="#grp-OS-computer-use">OS &amp; computer use</a><a href="#grp-business-office-enterprise">Business &amp; enterprise</a><a href="#grp-customer-service-dialogue">Service &amp; dialogue</a><a href="#grp-education-tutoring">Education &amp; tutoring</a><a href="#grp-embodied-household">Embodied &amp; robotics</a><a href="#grp-healthcare-clinical">Healthcare</a><a href="#grp-information-seeking">Information seeking</a><a href="#grp-multi-agent-org">Multi-agent orgs</a><a href="#grp-open-ended-sandbox">Open-ended sandboxes</a><a href="#grp-open-world-game">Games &amp; IF</a><a href="#grp-personal-assistant-memory">Assistants &amp; memory</a><a href="#grp-scientific-discovery">Science</a><a href="#grp-tool-use-API">Tool &amp; API</a><a href="#grp-travel-and-constraint-planning">Planning &amp; travel</a><a href="#grp-web-GUI">Web &amp; GUI</a></nav>
 
 <div class="controls">
 <input type="search" id="filterText" placeholder="search name or title" aria-label="Search by name or title">
-<select id="filterFam" aria-label="Filter by domain"><option value="">all domains</option><option value="business-office-enterprise">Business &amp; enterprise</option><option value="personal-assistant-memory">Assistants &amp; memory</option><option value="multi-agent-org">Multi-agent orgs</option><option value="embodied-household">Embodied &amp; robotics</option><option value="web-GUI">Web &amp; GUI</option><option value="open-world-game">Games &amp; IF</option><option value="travel-and-constraint-planning">Planning &amp; travel</option><option value="customer-service-dialogue">Service &amp; dialogue</option><option value="scientific-discovery">Science</option><option value="healthcare-clinical">Healthcare</option><option value="tool-use-API">Tool &amp; API</option><option value="OS-computer-use">OS &amp; computer use</option><option value="open-ended-sandbox">Open-ended sandboxes</option><option value="education-tutoring">Education &amp; tutoring</option></select>
+<select id="filterFam" aria-label="Filter by domain"><option value="">all domains</option><option value="business-office-enterprise">Business &amp; enterprise</option><option value="personal-assistant-memory">Assistants &amp; memory</option><option value="multi-agent-org">Multi-agent orgs</option><option value="embodied-household">Embodied &amp; robotics</option><option value="web-GUI">Web &amp; GUI</option><option value="open-world-game">Games &amp; IF</option><option value="travel-and-constraint-planning">Planning &amp; travel</option><option value="customer-service-dialogue">Service &amp; dialogue</option><option value="scientific-discovery">Science</option><option value="healthcare-clinical">Healthcare</option><option value="tool-use-API">Tool &amp; API</option><option value="OS-computer-use">OS &amp; computer use</option><option value="information-seeking">Information seeking</option><option value="open-ended-sandbox">Open-ended sandboxes</option><option value="education-tutoring">Education &amp; tutoring</option></select>
 <select id="filterYear" aria-label="Filter by year"><option value="">2025 + 2026</option><option value="2026">2026 only</option><option value="2025">2025 only</option></select>
 <select id="filterHz" aria-label="Filter by horizon"><option value="">any horizon</option><option value="yes">states a horizon</option><option value="no">states none</option></select>
 <select id="filterSg" aria-label="Filter by subgoal credit"><option value="">any scoring</option><option value="yes">subgoal credit</option><option value="no">final outcome only</option></select>
@@ -1138,7 +1138,7 @@ tr.grp:hover td{background:var(--accent-soft)}
  data-name="thinkingbox-bench one success isn&#x27;t reliability: thinkingbox, a sandbox and benchmark for agents in stateful business workflows">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291257563">Thinkingbox-bench</a>
  <div class="ttl">One Success Isn&#x27;t Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows</div></td>
-<td class="c-d">Business &amp; enterprise</td>
+<td class="c-d">Business &amp; enterprise<span class="sec">+ Information seeking</span></td>
 <td class="c-y mono">2026</td>
 <td class="c-g">gather missing information over multiple turns before acting; follow domain-specific policies for each of 507 policy-conditioned workflows; coordinate dependent tools correctly; realize exactly the correct persistent backend state transition without collateral effects</td>
 <td class="c-t">Agent must gather missing information across multiple turns, track applicable domain policies, coordinate dependent tool calls, and verify the resulting persistent backend state matches exactly the required final state with no collateral effects.</td>
@@ -1149,7 +1149,7 @@ tr.grp:hover td{background:var(--accent-soft)}
  data-name="underwrite benchmarking agents in insurance underwriting environments">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:285269064">Underwrite</a>
  <div class="ttl">Benchmarking Agents in Insurance Underwriting Environments</div></td>
-<td class="c-d">Business &amp; enterprise</td>
+<td class="c-d">Business &amp; enterprise<span class="sec">+ Information seeking</span></td>
 <td class="c-y mono">2026</td>
 <td class="c-g">gather information carefully from noisy tool interfaces and imperfect simulated users during an underwriting conversation; apply proprietary business/domain knowledge correctly rather than hallucinating it; reach a final underwriting decision consistent with the accumulated evidence gathered across the conversation</td>
 <td class="c-t">The agent must track what information it has already gathered (and from where), the reliability of that information given noisy tool interfaces, and how it should update its evolving underwriting assessment as more evidence accumulates across the conversation.</td>
@@ -1435,7 +1435,7 @@ tr.grp:hover td{background:var(--accent-soft)}
  data-name="scuba scuba: salesforce computer use benchmark">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:281682720">SCUBA</a>
  <div class="ttl">SCUBA: Salesforce Computer Use Benchmark</div></td>
-<td class="c-d">Business &amp; enterprise</td>
+<td class="c-d">Business &amp; enterprise<span class="sec">+ Information seeking</span></td>
 <td class="c-y mono">2025</td>
 <td class="c-g">navigate a specific enterprise software UI (Salesforce) to accomplish a CRM task; manipulate data records and automate workflows within the Salesforce platform; retrieve information and troubleshoot issues as part of a realistic CRM task; generalize across three personas (platform administrators, sales representatives, service agents) each with distinct task profiles</td>
 <td class="c-t">The agent must track its progress toward fine-grained milestones within each Salesforce sandbox task (UI navigation state, data changes made, workflow steps completed) to receive interpretable milestone-progress credit.</td>
@@ -2388,7 +2388,117 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-s"><span class="chip chip-sequential-chain">sequential-chain</span></td>
 <td class="c-c"><span class="sg sg-yes">yes</span></td>
 <td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="48">48<span class="rate">2.67/mo</span></td></tr><tr class="grp" id="grp-multi-agent-org"><td colspan="9">Multi-agent orgs<span class="gn">44 artifacts</span></td></tr><tr data-f="multi-agent-org" data-y="2026" data-hz="no" data-sg="yes"
+<td class="c-x mono" data-n="48">48<span class="rate">2.67/mo</span></td></tr><tr class="grp" id="grp-information-seeking"><td colspan="9">Information seeking<span class="gn">10 artifacts</span></td></tr><tr data-f="information-seeking" data-y="2026" data-hz="no" data-sg="yes"
+ data-name="dailyreport dailyreport: an open-ended benchmark for evaluating search agents on daily search tasks">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:289187200">DailyReport</a>
+ <div class="ttl">DailyReport: An Open-ended Benchmark for Evaluating Search Agents on Daily Search Tasks</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Science</span></td>
+<td class="c-y mono">2026</td>
+<td class="c-g">autonomously explore web sources and synthesize information into a comprehensive response to an open-ended daily search query; satisfy each of a task&#x27;s associated cascade rubrics across disentangled evaluation dimensions</td>
+<td class="c-t">Search agent must track which subtasks/rubric dimensions of an open-ended query it has satisfied, aggregating cascade performance across disentangled dimensions into an interpretable, user-centric final score.</td>
+<td class="c-s"><span class="chip chip-hierarchical">hierarchical</span></td>
+<td class="c-c"><span class="sg sg-yes">yes</span></td>
+<td class="c-h"><span class="none">none stated</span></td>
+<td class="c-x mono" data-n="0">0<span class="rate"></span></td></tr><tr data-f="information-seeking" data-y="2026" data-hz="no" data-sg="no"
+ data-name="deepsearchqa deepsearchqa: bridging the comprehensiveness gap for deep research agents">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:283897826">DeepSearchQA</a>
+ <div class="ttl">DeepSearchQA: Bridging the Comprehensiveness Gap for Deep Research Agents</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Tool &amp; API</span></td>
+<td class="c-y mono">2026</td>
+<td class="c-g">systematically collate fragmented information from disparate open-web sources; de-duplicate and resolve entities to ensure precision in the exhaustive answer list; reason about stopping criteria within an open-ended search space; complete each causal-chain step, where later steps depend on successful completion of the previous one</td>
+<td class="c-t">The agent must track which sources it has already collated, de-duplicate overlapping entities, maintain the causal-chain dependency state (what has been successfully resolved so far), and decide when to stop searching within an open-ended web space.</td>
+<td class="c-s"><span class="chip chip-sequential-chain">sequential-chain</span></td>
+<td class="c-c"><span class="sg sg-no">no</span></td>
+<td class="c-h"><span class="none">none stated</span><span class="unit">other:not-stated</span></td>
+<td class="c-x mono" data-n="39">39<span class="rate">4.88/mo</span></td></tr><tr data-f="information-seeking" data-y="2026" data-hz="no" data-sg="yes"
+ data-name="earthverse earthverse: benchmarking scientific agents across dynamic earth systems and natural hazards">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291328748">EarthVerse</a>
+ <div class="ttl">EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Science</span></td>
+<td class="c-y mono">2026</td>
+<td class="c-g">inspect heterogeneous event packages and choose compatible evidence for a natural-hazard investigation; execute transparent calculations reconciling differences across sources; preserve provenance across evidence, scales, units, and calculations in the final answer; produce each of the fine-grained answer units defined by the task&#x27;s executable ground truth</td>
+<td class="c-t">Agent must track evidence provenance, scales, units, and intermediate calculation results across a multi-stage investigation, since fine-grained answer units are each checked against executable ground truth.</td>
+<td class="c-s"><span class="chip chip-DAG-with-precedence">DAG-with-precedence</span></td>
+<td class="c-c"><span class="sg sg-yes">yes</span></td>
+<td class="c-h"><span class="none">none stated</span></td>
+<td class="c-x mono" data-n="0">0<span class="rate"></span></td></tr><tr data-f="information-seeking" data-y="2026" data-hz="no" data-sg="yes"
+ data-name="hae-geo evaluating deep-search agents under hierarchical web evidence poisoning">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291832235">HAE-GEO</a>
+ <div class="ttl">Evaluating Deep-Search Agents under Hierarchical Web Evidence Poisoning</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Science</span></td>
+<td class="c-y mono">2026</td>
+<td class="c-g">search and retrieve web evidence for a consumer-decision query while a poisoning attack (of increasing sophistication, L1-L3) is present; recognize/verify suspicious evidence rather than adopting it uncritically; revise any already-adopted poisoned claims and recover to a trustworthy final recommendation</td>
+<td class="c-t">The agent must track which evidence it has already adopted (and whether that evidence was verified or poisoned), across a multi-turn Search-Scrape interaction, and must be able to revise earlier adopted claims before finalizing its recommendation.</td>
+<td class="c-s"><span class="chip chip-sequential-chain">sequential-chain</span></td>
+<td class="c-c"><span class="sg sg-yes">yes</span></td>
+<td class="c-h"><span class="none">none stated</span></td>
+<td class="c-x mono" data-n="0">0<span class="rate"></span></td></tr><tr data-f="information-seeking" data-y="2026" data-hz="no" data-sg="yes"
+ data-name="medprobebench (medprobe-eval) medprobebench: systematic benchmarking at deep evidence integration for expert-level medical guideline">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:287635317">MedProbeBench (MedProbe-Eval)</a>
+ <div class="ttl">MedProbeBench: Systematic Benchmarking at Deep Evidence Integration for Expert-level Medical Guideline</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Science</span></td>
+<td class="c-y mono">2026</td>
+<td class="c-g">retrieve, synthesize, and reason over large-scale external medical evidence to reach expert-level judgment; satisfy 1,200+ task-adaptive rubric criteria for one produced clinical guideline; ensure each of 5,130+ atomic claims in the guideline is precisely evidenced (fine-grained evidence verification)</td>
+<td class="c-t">System must track which rubric criteria have been satisfied and which atomic claims have been verified against source evidence as it synthesizes a guideline from large-scale external knowledge.</td>
+<td class="c-s"><span class="chip chip-set-of-independent">set-of-independent</span></td>
+<td class="c-c"><span class="sg sg-yes">yes</span></td>
+<td class="c-h"><span class="none">none stated</span></td>
+<td class="c-x mono" data-n="1">1<span class="rate">0.2/mo</span></td></tr><tr data-f="information-seeking" data-y="2026" data-hz="yes" data-sg="yes"
+ data-name="mr.lhdr mr.lhdr: a benchmark for multimodal real-world long-horizon deep research agents">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291902282">Mr.LHDR</a>
+ <div class="ttl">Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Science</span></td>
+<td class="c-y mono">2026</td>
+<td class="c-g">derive an average of 12.1 necessary intermediate conclusions along a hidden Node-Relation dependency graph before reaching the final answer; integrate multimodal evidence (images, maps, PDFs, logos, charts, tables, video frames) where at least one non-text element changes the reasoning state; maintain correctness of intermediate conclusions consistent with annotated dependencies, not just the final answer</td>
+<td class="c-t">Agent must track which intermediate conclusions it has established so far, their dependency relationships, and integrate incremental multimodal evidence that can change the reasoning state, across long, irreducible evidence chains.</td>
+<td class="c-s"><span class="chip chip-DAG-with-precedence">DAG-with-precedence</span></td>
+<td class="c-c"><span class="sg sg-yes">yes</span></td>
+<td class="c-h"><span class="mono">avg 12.1 necessary intermediate conclusions per question (mean dependency depth 10.4)</span><span class="unit">other:intermediate-conclusions-per-question</span></td>
+<td class="c-x mono" data-n="0">0<span class="rate"></span></td></tr><tr data-f="information-seeking" data-y="2026" data-hz="no" data-sg="yes"
+ data-name="researchclawbench researchclawbench: a benchmark for end-to-end autonomous scientific research">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:289032019">ResearchClawBench</a>
+ <div class="ttl">ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Science</span></td>
+<td class="c-y mono">2026</td>
+<td class="c-g">re-discover a target published paper&#x27;s scientific artifacts (methods, findings) using only related literature and raw data, with the target paper hidden; satisfy each of several expert-curated, weighted multimodal rubric criteria decomposed from the target scientific artifacts</td>
+<td class="c-t">Agent must track progress across an end-to-end research process (reviewing literature/raw data, designing methodology, producing results) and self-check against the (hidden) target paper&#x27;s decomposed criteria without directly seeing it.</td>
+<td class="c-s"><span class="chip chip-hierarchical">hierarchical</span></td>
+<td class="c-c"><span class="sg sg-yes">yes</span></td>
+<td class="c-h"><span class="none">none stated</span></td>
+<td class="c-x mono" data-n="8">8<span class="rate">2.0/mo</span></td></tr><tr data-f="information-seeking" data-y="2026" data-hz="no" data-sg="yes"
+ data-name="wandr wandr: a benchmark for wide and deep research">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291171977">WANDR</a>
+ <div class="ttl">WANDR: A Benchmark for Wide and Deep Research</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Science</span></td>
+<td class="c-y mono">2026</td>
+<td class="c-g">discover a large set of entities satisfying specified criteria (breadth); investigate each discovered entity through multiple coordinated web searches (depth); return independently verifiable records with supporting sources/excerpts for each required (entity, relationship, evidence) combination; satisfy the full qualification-key hierarchy count (n x m x k records)</td>
+<td class="c-t">The agent must track which entities it has already discovered, which have been investigated to the required depth, and which evidence/sources have been independently verified, maintaining hierarchical completeness across potentially thousands of required records per task.</td>
+<td class="c-s"><span class="chip chip-hierarchical">hierarchical</span></td>
+<td class="c-c"><span class="sg sg-yes">yes</span></td>
+<td class="c-h"><span class="none">none stated</span></td>
+<td class="c-x mono" data-n="1">1<span class="rate">1.0/mo</span></td></tr><tr data-f="information-seeking" data-y="2025" data-hz="no" data-sg="yes"
+ data-name="deer deer: a benchmark for evaluating deep research agents on expert report generation">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:284057999">DEER</a>
+ <div class="ttl">DEER: A Benchmark for Evaluating Deep Research Agents on Expert Report Generation</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Science</span></td>
+<td class="c-y mono">2025</td>
+<td class="c-g">produce an expert-level report satisfying each of 101 fine-grained rubric items across 7 dimensions/25 subdimensions; correctly cite and support both cited and uncited claims with verifiable evidence</td>
+<td class="c-t">The agent/judge must track satisfaction of 101 individual rubric items plus report-wide claim verification (both cited and uncited claims) across one long expert-level report, rather than judging the report as a single holistic pass/fail.</td>
+<td class="c-s"><span class="chip chip-set-of-independent">set-of-independent</span></td>
+<td class="c-c"><span class="sg sg-yes">yes</span></td>
+<td class="c-h"><span class="none">none stated</span></td>
+<td class="c-x mono" data-n="11">11<span class="rate">1.22/mo</span></td></tr><tr data-f="information-seeking" data-y="2025" data-hz="yes" data-sg="no"
+ data-name="mem1 composed multi-turn task sequences mem1: learning to synergize memory and reasoning for efficient long-horizon agents">
+<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:279465470">MEM1 composed multi-turn task sequences</a>
+ <div class="ttl">MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents</div></td>
+<td class="c-d">Information seeking<span class="sec">+ Tool &amp; API</span></td>
+<td class="c-y mono">2025</td>
+<td class="c-g">answer each of many composed, interdependent objectives within one arbitrarily complex task sequence (e.g. a 16-objective multi-hop QA task); retrieve external information across internal retrieval QA, open-domain web QA, and multi-turn web shopping domains; consolidate memory turn-by-turn, discarding irrelevant/redundant information, to operate with constant memory</td>
+<td class="c-t">Agent must maintain a compact shared internal state that jointly supports memory consolidation and reasoning across many turns of a composed task sequence, integrating new observations while discarding irrelevant or redundant information.</td>
+<td class="c-s"><span class="chip chip-sequential-chain">sequential-chain</span></td>
+<td class="c-c"><span class="sg sg-no">no</span></td>
+<td class="c-h"><span class="mono">16</span><span class="unit">other:composed-objectives-per-task</span></td>
+<td class="c-x mono" data-n="196">196<span class="rate">13.07/mo</span></td></tr><tr class="grp" id="grp-multi-agent-org"><td colspan="9">Multi-agent orgs<span class="gn">44 artifacts</span></td></tr><tr data-f="multi-agent-org" data-y="2026" data-hz="no" data-sg="yes"
  data-name=" is lying an emergent behaviour in llms? evidence from gaslighting ai agents in a sustainability game">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:289683825">Is Lying an Emergent Behaviour in LLMs? Evidence from Gaslighting AI agents in a Sustainability Game</a>
  <div class="ttl">Is Lying an Emergent Behaviour in LLMs? Evidence from Gaslighting AI agents in a Sustainability Game</div></td>
@@ -3833,7 +3943,7 @@ tr.grp:hover td{background:var(--accent-soft)}
  data-name="past-bench past-bench: benchmarking the foundations of recursive self-improvement in personal agents">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:290836900">PAST-Bench</a>
  <div class="ttl">PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents</div></td>
-<td class="c-d">Assistants &amp; memory</td>
+<td class="c-d">Assistants &amp; memory<span class="sec">+ Information seeking</span></td>
 <td class="c-y mono">2026</td>
 <td class="c-g">reuse a retained skill/procedure across sessions on a later fresh-session task; retrieve a previously stored preference/fact and apply it correctly in a new session; gather information in one session that is needed to complete a task in a later session; update outdated retained state (e.g. a stale fact) rather than acting on it unchanged</td>
 <td class="c-t">The agent must save, retrieve, and update experience (preferences, task histories, tool routines, learned skills) across an ordered sequence of separate, fresh sessions, and the benchmark explicitly checks whether later-task gains actually follow this intended save/retrieve/update pathway rather than occurring by other means.</td>
@@ -4097,7 +4207,7 @@ tr.grp:hover td{background:var(--accent-soft)}
  data-name="memoryagentbench evaluating memory in llm agents via incremental multi-turn interactions">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:280136659">MemoryAgentBench</a>
  <div class="ttl">Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions</div></td>
-<td class="c-d">Assistants &amp; memory</td>
+<td class="c-d">Assistants &amp; memory<span class="sec">+ Information seeking</span></td>
 <td class="c-y mono">2025</td>
 <td class="c-g">accurately retrieve previously seen information from accumulated context; adapt to and learn from new information at test time; understand and reason over long-range accumulated context; selectively forget information that is no longer relevant or valid</td>
 <td class="c-t">The memory agent must incrementally accumulate, update, and retrieve information across multi-turn interactions, and correctly discard information rendered obsolete while retaining what remains useful.</td>
@@ -4159,7 +4269,7 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-s"><span class="chip chip-set-of-independent">set-of-independent</span></td>
 <td class="c-c"><span class="sg sg-no">no</span></td>
 <td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="62">62<span class="rate">4.43/mo</span></td></tr><tr class="grp" id="grp-scientific-discovery"><td colspan="9">Science<span class="gn">22 artifacts</span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
+<td class="c-x mono" data-n="62">62<span class="rate">4.43/mo</span></td></tr><tr class="grp" id="grp-scientific-discovery"><td colspan="9">Science<span class="gn">14 artifacts</span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
  data-name="asi-bench asi-bench: at the dawn of artificial superintelligence">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291185159">ASI-Bench</a>
  <div class="ttl">ASI-Bench: At the Dawn of Artificial Superintelligence</div></td>
@@ -4204,17 +4314,6 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-c"><span class="sg sg-no">no</span></td>
 <td class="c-h"><span class="none">none stated</span><span class="unit">other:not-stated</span></td>
 <td class="c-x mono" data-n="1">1<span class="rate">0.25/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
- data-name="dailyreport dailyreport: an open-ended benchmark for evaluating search agents on daily search tasks">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:289187200">DailyReport</a>
- <div class="ttl">DailyReport: An Open-ended Benchmark for Evaluating Search Agents on Daily Search Tasks</div></td>
-<td class="c-d">Science</td>
-<td class="c-y mono">2026</td>
-<td class="c-g">autonomously explore web sources and synthesize information into a comprehensive response to an open-ended daily search query; satisfy each of a task&#x27;s associated cascade rubrics across disentangled evaluation dimensions</td>
-<td class="c-t">Search agent must track which subtasks/rubric dimensions of an open-ended query it has satisfied, aggregating cascade performance across disentangled dimensions into an interpretable, user-centric final score.</td>
-<td class="c-s"><span class="chip chip-hierarchical">hierarchical</span></td>
-<td class="c-c"><span class="sg sg-yes">yes</span></td>
-<td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="0">0<span class="rate"></span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
  data-name="discoverphysics discoverphysics: benchmarking llms for out-of-the-box scientific thinking">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:288669908">DiscoverPhysics</a>
  <div class="ttl">DiscoverPhysics: Benchmarking LLMs for Out-of-the-Box Scientific Thinking</div></td>
@@ -4226,28 +4325,6 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-c"><span class="sg sg-yes">yes</span></td>
 <td class="c-h"><span class="none">none stated</span></td>
 <td class="c-x mono" data-n="4">4<span class="rate">1.0/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
- data-name="earthverse earthverse: benchmarking scientific agents across dynamic earth systems and natural hazards">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291328748">EarthVerse</a>
- <div class="ttl">EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards</div></td>
-<td class="c-d">Science</td>
-<td class="c-y mono">2026</td>
-<td class="c-g">inspect heterogeneous event packages and choose compatible evidence for a natural-hazard investigation; execute transparent calculations reconciling differences across sources; preserve provenance across evidence, scales, units, and calculations in the final answer; produce each of the fine-grained answer units defined by the task&#x27;s executable ground truth</td>
-<td class="c-t">Agent must track evidence provenance, scales, units, and intermediate calculation results across a multi-stage investigation, since fine-grained answer units are each checked against executable ground truth.</td>
-<td class="c-s"><span class="chip chip-DAG-with-precedence">DAG-with-precedence</span></td>
-<td class="c-c"><span class="sg sg-yes">yes</span></td>
-<td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="0">0<span class="rate"></span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
- data-name="hae-geo evaluating deep-search agents under hierarchical web evidence poisoning">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291832235">HAE-GEO</a>
- <div class="ttl">Evaluating Deep-Search Agents under Hierarchical Web Evidence Poisoning</div></td>
-<td class="c-d">Science<span class="sec">+ Web &amp; GUI</span></td>
-<td class="c-y mono">2026</td>
-<td class="c-g">search and retrieve web evidence for a consumer-decision query while a poisoning attack (of increasing sophistication, L1-L3) is present; recognize/verify suspicious evidence rather than adopting it uncritically; revise any already-adopted poisoned claims and recover to a trustworthy final recommendation</td>
-<td class="c-t">The agent must track which evidence it has already adopted (and whether that evidence was verified or poisoned), across a multi-turn Search-Scrape interaction, and must be able to revise earlier adopted claims before finalizing its recommendation.</td>
-<td class="c-s"><span class="chip chip-sequential-chain">sequential-chain</span></td>
-<td class="c-c"><span class="sg sg-yes">yes</span></td>
-<td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="0">0<span class="rate"></span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
  data-name="inatdisco autonomous scientific discovery via iterative meta-reflection">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:289706430">iNatDisco</a>
  <div class="ttl">Autonomous Scientific Discovery via Iterative Meta-Reflection</div></td>
@@ -4292,39 +4369,6 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-c"><span class="sg sg-yes">yes</span></td>
 <td class="c-h"><span class="none">none stated</span><span class="unit">other:not-stated</span></td>
 <td class="c-x mono" data-n="4">4<span class="rate">4.0/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
- data-name="medprobebench (medprobe-eval) medprobebench: systematic benchmarking at deep evidence integration for expert-level medical guideline">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:287635317">MedProbeBench (MedProbe-Eval)</a>
- <div class="ttl">MedProbeBench: Systematic Benchmarking at Deep Evidence Integration for Expert-level Medical Guideline</div></td>
-<td class="c-d">Science<span class="sec">+ Healthcare</span></td>
-<td class="c-y mono">2026</td>
-<td class="c-g">retrieve, synthesize, and reason over large-scale external medical evidence to reach expert-level judgment; satisfy 1,200+ task-adaptive rubric criteria for one produced clinical guideline; ensure each of 5,130+ atomic claims in the guideline is precisely evidenced (fine-grained evidence verification)</td>
-<td class="c-t">System must track which rubric criteria have been satisfied and which atomic claims have been verified against source evidence as it synthesizes a guideline from large-scale external knowledge.</td>
-<td class="c-s"><span class="chip chip-set-of-independent">set-of-independent</span></td>
-<td class="c-c"><span class="sg sg-yes">yes</span></td>
-<td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="1">1<span class="rate">0.2/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="yes" data-sg="yes"
- data-name="mr.lhdr mr.lhdr: a benchmark for multimodal real-world long-horizon deep research agents">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291902282">Mr.LHDR</a>
- <div class="ttl">Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents</div></td>
-<td class="c-d">Science</td>
-<td class="c-y mono">2026</td>
-<td class="c-g">derive an average of 12.1 necessary intermediate conclusions along a hidden Node-Relation dependency graph before reaching the final answer; integrate multimodal evidence (images, maps, PDFs, logos, charts, tables, video frames) where at least one non-text element changes the reasoning state; maintain correctness of intermediate conclusions consistent with annotated dependencies, not just the final answer</td>
-<td class="c-t">Agent must track which intermediate conclusions it has established so far, their dependency relationships, and integrate incremental multimodal evidence that can change the reasoning state, across long, irreducible evidence chains.</td>
-<td class="c-s"><span class="chip chip-DAG-with-precedence">DAG-with-precedence</span></td>
-<td class="c-c"><span class="sg sg-yes">yes</span></td>
-<td class="c-h"><span class="mono">avg 12.1 necessary intermediate conclusions per question (mean dependency depth 10.4)</span><span class="unit">other:intermediate-conclusions-per-question</span></td>
-<td class="c-x mono" data-n="0">0<span class="rate"></span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
- data-name="researchclawbench researchclawbench: a benchmark for end-to-end autonomous scientific research">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:289032019">ResearchClawBench</a>
- <div class="ttl">ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research</div></td>
-<td class="c-d">Science</td>
-<td class="c-y mono">2026</td>
-<td class="c-g">re-discover a target published paper&#x27;s scientific artifacts (methods, findings) using only related literature and raw data, with the target paper hidden; satisfy each of several expert-curated, weighted multimodal rubric criteria decomposed from the target scientific artifacts</td>
-<td class="c-t">Agent must track progress across an end-to-end research process (reviewing literature/raw data, designing methodology, producing results) and self-check against the (hidden) target paper&#x27;s decomposed criteria without directly seeing it.</td>
-<td class="c-s"><span class="chip chip-hierarchical">hierarchical</span></td>
-<td class="c-c"><span class="sg sg-yes">yes</span></td>
-<td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="8">8<span class="rate">2.0/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
  data-name="rwe-bench can llm agents generate real-world evidence? evaluating observational studies in medical databases">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:286774610">RWE-bench</a>
  <div class="ttl">Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases</div></td>
@@ -4346,18 +4390,7 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-s"><span class="chip chip-hierarchical">hierarchical</span></td>
 <td class="c-c"><span class="sg sg-no">no</span></td>
 <td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="9">9<span class="rate">1.29/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2026" data-hz="no" data-sg="yes"
- data-name="wandr wandr: a benchmark for wide and deep research">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291171977">WANDR</a>
- <div class="ttl">WANDR: A Benchmark for Wide and Deep Research</div></td>
-<td class="c-d">Science</td>
-<td class="c-y mono">2026</td>
-<td class="c-g">discover a large set of entities satisfying specified criteria (breadth); investigate each discovered entity through multiple coordinated web searches (depth); return independently verifiable records with supporting sources/excerpts for each required (entity, relationship, evidence) combination; satisfy the full qualification-key hierarchy count (n x m x k records)</td>
-<td class="c-t">The agent must track which entities it has already discovered, which have been investigated to the required depth, and which evidence/sources have been independently verified, maintaining hierarchical completeness across potentially thousands of required records per task.</td>
-<td class="c-s"><span class="chip chip-hierarchical">hierarchical</span></td>
-<td class="c-c"><span class="sg sg-yes">yes</span></td>
-<td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="1">1<span class="rate">1.0/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2025" data-hz="no" data-sg="yes"
+<td class="c-x mono" data-n="9">9<span class="rate">1.29/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2025" data-hz="no" data-sg="yes"
  data-name="afmbench evaluating large language model agents for automation of atomic force microscopy">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:282100257">AFMBench</a>
  <div class="ttl">Evaluating large language model agents for automation of atomic force microscopy</div></td>
@@ -4380,17 +4413,6 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-c"><span class="sg sg-yes">yes</span></td>
 <td class="c-h"><span class="mono">evaluated after 0, 1, 3, 5, 7, and 10 experiment-design steps per trial, with 5 independent trials per environment</span><span class="unit">actions</span></td>
 <td class="c-x mono" data-n="11">11<span class="rate">0.55/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2025" data-hz="no" data-sg="yes"
- data-name="deer deer: a benchmark for evaluating deep research agents on expert report generation">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:284057999">DEER</a>
- <div class="ttl">DEER: A Benchmark for Evaluating Deep Research Agents on Expert Report Generation</div></td>
-<td class="c-d">Science</td>
-<td class="c-y mono">2025</td>
-<td class="c-g">produce an expert-level report satisfying each of 101 fine-grained rubric items across 7 dimensions/25 subdimensions; correctly cite and support both cited and uncited claims with verifiable evidence</td>
-<td class="c-t">The agent/judge must track satisfaction of 101 individual rubric items plus report-wide claim verification (both cited and uncited claims) across one long expert-level report, rather than judging the report as a single holistic pass/fail.</td>
-<td class="c-s"><span class="chip chip-set-of-independent">set-of-independent</span></td>
-<td class="c-c"><span class="sg sg-yes">yes</span></td>
-<td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="11">11<span class="rate">1.22/mo</span></td></tr><tr data-f="scientific-discovery" data-y="2025" data-hz="no" data-sg="yes"
  data-name="scienceboard scienceboard: evaluating multimodal autonomous agents in realistic scientific workflows">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:278912205">ScienceBoard</a>
  <div class="ttl">ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows</div></td>
@@ -4401,7 +4423,7 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-s"><span class="chip chip-sequential-chain">sequential-chain</span></td>
 <td class="c-c"><span class="sg sg-yes">yes</span></td>
 <td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="43">43<span class="rate">2.69/mo</span></td></tr><tr class="grp" id="grp-tool-use-API"><td colspan="9">Tool &amp; API<span class="gn">31 artifacts</span></td></tr><tr data-f="tool-use-API" data-y="2026" data-hz="yes" data-sg="yes"
+<td class="c-x mono" data-n="43">43<span class="rate">2.69/mo</span></td></tr><tr class="grp" id="grp-tool-use-API"><td colspan="9">Tool &amp; API<span class="gn">29 artifacts</span></td></tr><tr data-f="tool-use-API" data-y="2026" data-hz="yes" data-sg="yes"
  data-name=" benchmarking ai agents for hardware design automation via mcp tool calling">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:291383111">Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling</a>
  <div class="ttl">Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling</div></td>
@@ -4500,18 +4522,7 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-s"><span class="chip chip-set-of-independent">set-of-independent</span></td>
 <td class="c-c"><span class="sg sg-yes">yes</span></td>
 <td class="c-h"><span class="mono">maximum 20 interaction rounds per test case</span><span class="unit">turns</span></td>
-<td class="c-x mono" data-n="7">7<span class="rate">1.17/mo</span></td></tr><tr data-f="tool-use-API" data-y="2026" data-hz="no" data-sg="no"
- data-name="deepsearchqa deepsearchqa: bridging the comprehensiveness gap for deep research agents">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:283897826">DeepSearchQA</a>
- <div class="ttl">DeepSearchQA: Bridging the Comprehensiveness Gap for Deep Research Agents</div></td>
-<td class="c-d">Tool &amp; API</td>
-<td class="c-y mono">2026</td>
-<td class="c-g">systematically collate fragmented information from disparate open-web sources; de-duplicate and resolve entities to ensure precision in the exhaustive answer list; reason about stopping criteria within an open-ended search space; complete each causal-chain step, where later steps depend on successful completion of the previous one</td>
-<td class="c-t">The agent must track which sources it has already collated, de-duplicate overlapping entities, maintain the causal-chain dependency state (what has been successfully resolved so far), and decide when to stop searching within an open-ended web space.</td>
-<td class="c-s"><span class="chip chip-sequential-chain">sequential-chain</span></td>
-<td class="c-c"><span class="sg sg-no">no</span></td>
-<td class="c-h"><span class="none">none stated</span><span class="unit">other:not-stated</span></td>
-<td class="c-x mono" data-n="39">39<span class="rate">4.88/mo</span></td></tr><tr data-f="tool-use-API" data-y="2026" data-hz="no" data-sg="yes"
+<td class="c-x mono" data-n="7">7<span class="rate">1.17/mo</span></td></tr><tr data-f="tool-use-API" data-y="2026" data-hz="no" data-sg="yes"
  data-name="geoagentbench (gabench) geoagentbench: a dynamic execution benchmark for tool-augmented agents in spatial analysis">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:287480765">GeoAgentBench (GABench)</a>
  <div class="ttl">GeoAgentBench: A Dynamic Execution Benchmark for Tool-Augmented Agents in Spatial Analysis</div></td>
@@ -4687,18 +4698,7 @@ tr.grp:hover td{background:var(--accent-soft)}
 <td class="c-s"><span class="chip chip-DAG-with-precedence">DAG-with-precedence</span></td>
 <td class="c-c"><span class="sg sg-yes">yes</span></td>
 <td class="c-h"><span class="none">none stated</span></td>
-<td class="c-x mono" data-n="9">9<span class="rate">0.9/mo</span></td></tr><tr data-f="tool-use-API" data-y="2025" data-hz="yes" data-sg="no"
- data-name="mem1 composed multi-turn task sequences mem1: learning to synergize memory and reasoning for efficient long-horizon agents">
-<td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:279465470">MEM1 composed multi-turn task sequences</a>
- <div class="ttl">MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents</div></td>
-<td class="c-d">Tool &amp; API<span class="sec">+ Web &amp; GUI</span></td>
-<td class="c-y mono">2025</td>
-<td class="c-g">answer each of many composed, interdependent objectives within one arbitrarily complex task sequence (e.g. a 16-objective multi-hop QA task); retrieve external information across internal retrieval QA, open-domain web QA, and multi-turn web shopping domains; consolidate memory turn-by-turn, discarding irrelevant/redundant information, to operate with constant memory</td>
-<td class="c-t">Agent must maintain a compact shared internal state that jointly supports memory consolidation and reasoning across many turns of a composed task sequence, integrating new observations while discarding irrelevant or redundant information.</td>
-<td class="c-s"><span class="chip chip-sequential-chain">sequential-chain</span></td>
-<td class="c-c"><span class="sg sg-no">no</span></td>
-<td class="c-h"><span class="mono">16</span><span class="unit">other:composed-objectives-per-task</span></td>
-<td class="c-x mono" data-n="196">196<span class="rate">13.07/mo</span></td></tr><tr data-f="tool-use-API" data-y="2025" data-hz="no" data-sg="no"
+<td class="c-x mono" data-n="9">9<span class="rate">0.9/mo</span></td></tr><tr data-f="tool-use-API" data-y="2025" data-hz="no" data-sg="no"
  data-name="multi-mission tool bench multi-mission tool bench: assessing the robustness of llm based agents through related and dynamic missions">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:277509805">Multi-Mission Tool Bench</a>
  <div class="ttl">Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions</div></td>
@@ -4757,7 +4757,7 @@ tr.grp:hover td{background:var(--accent-soft)}
  data-name="deepplanning deepplanning: benchmarking long-horizon agentic planning with verifiable constraints">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:285050875">DeepPlanning</a>
  <div class="ttl">DeepPlanning: Benchmarking Long-Horizon Agentic Planning with Verifiable Constraints</div></td>
-<td class="c-d">Planning &amp; travel</td>
+<td class="c-d">Planning &amp; travel<span class="sec">+ Information seeking</span></td>
 <td class="c-y mono">2026</td>
 <td class="c-g">satisfy local, fine-grained constraints on individual itinerary/shopping items; satisfy global constrained optimization objectives (e.g. time and financial budgets) across the whole plan; proactively gather information needed before constraints can even be checked</td>
 <td class="c-t">Agent must track accumulated time and financial budget consumption across a multi-day plan or multi-product list, alongside fine-grained local constraints, while still actively gathering new information mid-task.</td>
@@ -5351,7 +5351,7 @@ tr.grp:hover td{background:var(--accent-soft)}
  data-name="webchorearena webchorearena: evaluating web browsing agents on realistic tedious web tasks">
 <td class="c-n"><a href="https://api.semanticscholar.org/CorpusId:279119756">WebChoreArena</a>
  <div class="ttl">WebChoreArena: Evaluating Web Browsing Agents on Realistic Tedious Web Tasks</div></td>
-<td class="c-d">Web &amp; GUI</td>
+<td class="c-d">Web &amp; GUI<span class="sec">+ Information seeking</span></td>
 <td class="c-y mono">2025</td>
 <td class="c-g">retain and retrieve large amounts of information gathered from many observations (Massive Memory); perform precise mathematical/quantitative reasoning over collected information (Calculation); keep information consistent while tracking it across multiple webpages over the course of a task (Long-Term Memory)</td>
 <td class="c-t">Agent must accumulate and correctly recall large amounts of information across many webpages, perform arithmetic over it, and keep facts consistent across the whole task rather than a single page view.</td>

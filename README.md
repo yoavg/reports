@@ -55,8 +55,11 @@ also served as web pages: [the report](https://yoavg.github.io/reports/long-hori
 - The corpus spans **14 domain families**, led by business/office/enterprise
   (105), personal assistants & memory (65) and embodied & robotics
   (46). Every family assignment comes from the domain the extractor recorded after
-  reading the paper; **139 artifacts span two families** and carry a
-  recorded secondary.
+  reading the paper; **153 artifacts span two families** and carry a recorded secondary.
+- **Information seeking & deep research is its own family (10 artifacts, 7 more cross-listed)** —
+  small on purpose. 130 information-seeking artifacts were judged out because a single research
+  question decomposed into subqueries is *one* goal under this corpus's multi-goal test; the
+  survivors are those where information seeking sits inside a longer multi-goal task.
 - Each row carries a **citation count**. With 318 of 480 entries from 2026
   and 126 at zero (median 3, max 456),
   that column measures age far more than quality — it is shipped for sorting, not for ranking.
@@ -90,6 +93,10 @@ also served as web pages: [the report](https://yoavg.github.io/reports/long-hori
   multi-agent by 25, under-counted tool-use and OS/computer-use by 16 each, and hid the
   open-ended-sandbox family entirely. The three headline findings above are unaffected — they never
   depended on family.
+- The information-seeking family was re-derived from each paper's extracted goals rather than
+  from its recorded domain, because the extraction packet's domain vocabulary never offered that
+  option — a gap in the packet. Those 10 rows are marked `evidence-rederived` in `family_source`;
+  the other 470 come straight from the extractor's own domain call.
 - Counts are per-artifact and single-extractor. Three probe papers placed in every extraction
   batch were identified identically by all eight extractors but drifted on structure vocabulary.
 

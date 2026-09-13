@@ -44,10 +44,10 @@
   },
   {
    "family": "tool-use-API",
-   "y2025": 8,
-   "y2026": 23,
+   "y2025": 7,
+   "y2026": 22,
    "other": 0,
-   "total": 31
+   "total": 29
   },
   {
    "family": "OS-computer-use",
@@ -64,13 +64,6 @@
    "total": 23
   },
   {
-   "family": "scientific-discovery",
-   "y2025": 4,
-   "y2026": 18,
-   "other": 0,
-   "total": 22
-  },
-  {
    "family": "travel-and-constraint-planning",
    "y2025": 10,
    "y2026": 9,
@@ -83,6 +76,20 @@
    "y2026": 11,
    "other": 0,
    "total": 18
+  },
+  {
+   "family": "scientific-discovery",
+   "y2025": 3,
+   "y2026": 11,
+   "other": 0,
+   "total": 14
+  },
+  {
+   "family": "information-seeking",
+   "y2025": 2,
+   "y2026": 8,
+   "other": 0,
+   "total": 10
   },
   {
    "family": "healthcare-clinical",
