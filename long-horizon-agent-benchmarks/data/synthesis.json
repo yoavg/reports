@@ -30,10 +30,10 @@
   "basis_note": "480 goal-structure records; goal_origin normalized to 6 families."
  },
  {
-  "claim": "The corpus splits into 13 domain families, led by business/office/enterprise, personal-assistant & memory, multi-agent organisations, embodied & robotics, and web/GUI; 2026 outnumbers 2025 across the corpus.",
-  "because": "Family assignment composes the extractor's kind-typed domain field with the judge's domain open-code and the title, applied by a single deterministic rule over all 480 rows.",
-  "unless": "unless the family boundaries are doing work the reader would draw differently \u2014 'business/office/enterprise' absorbs retail, finance and workplace simulation, and a reader interested specifically in enterprise software work would want that split further.",
-  "basis_note": "480 catalog rows; per-family era counts computed from the candidate year field."
+  "claim": "The corpus splits into 14 domain families, led by business office enterprise (105), personal assistant memory (65), embodied household (46), multi agent org (44), web GUI (39); 2026 outnumbers 2025 by 318 to 162 across the corpus.",
+  "because": "Family now comes from the kind-typed `domain` field the extractor recorded after reading the paper \u2014 480 of 480 rows, with every `other:<specific>` value routed explicitly rather than pooled into a catch-all. No assignment rests on a title keyword.",
+  "unless": "unless the deliberate merges mislead: robotics-sim is folded into embodied-household and text-game-IF into games, because readers of this corpus treat each pair as one literature. 139 artifacts genuinely span two families and carry a recorded secondary family; counting only the primary understates those literatures.",
+  "basis_note": "480 catalog rows; family from the extraction records, per-family era counts from the candidate year field. Supersedes an earlier ordered-keyword rollup that let a title word override the extractor (it filed a Slay the Spire testbed under memory because the title said 'Bounded-Memory'); that version over-counted business by 31, assistants by 29 and multi-agent by 25, under-counted tool-use and OS/computer-use by 16 each, and hid open-ended-sandbox entirely."
  },
  {
   "claim": "Acquisition modality yields over the core are concentrated: paper-finder sweeps and forward-citation each account for roughly two thirds of the core, registry enumeration and parametric memory for far less.",
@@ -46,5 +46,17 @@
   "because": "artifact_kind is a kind-typed extraction field taken from the paper's own self-description.",
   "unless": "unless the benchmark/environment distinction is softer than the counts suggest \u2014 several artifacts ship an interactive environment AND a fixed task set, and extractors had to pick one label.",
   "basis_note": "480 goal-structure records."
+ },
+ {
+  "claim": "Family from extracted domain \u2014 never from a title keyword \u2014 determines every assignment: all 480 of 480 rows carry a family_source of extracted-domain.",
+  "because": "Every catalog row carries a family_source field, and all of them read extracted-domain or extracted-domain-other \u2014 the title fallback and the judge-code fallback fire zero times, so the provenance is checkable per row rather than asserted.",
+  "unless": "unless the extractor's own domain call is wrong for a given paper: the field is a single extractor's kind-typed judgment from the abstract, with no second reader, so an artifact whose abstract misdescribes its own domain would be misfiled with full confidence.",
+  "basis_note": "480 catalog rows, field family_source; 43 of them routed from an explicit other:<specific> value through a documented keyword router rather than pooled into a catch-all."
+ },
+ {
+  "claim": "A secondary family recorded alongside the primary marks 139 of 480 artifacts that genuinely span two domain literatures.",
+  "because": "A secondary family is recorded only when the extraction's domain string, the judge's domain code or the title names a second family explicitly \u2014 Collab-Overcooked is both a game and a multi-agent coordination benchmark, and counting it once in either family alone understates that literature.",
+  "unless": "unless the secondary is an artifact of vocabulary overlap rather than real scope: the detector is keyword-based over three text fields, so a paper that merely mentions another domain in its title can pick up a spurious second family. The primary family never depends on it, and no count in this report is computed over secondaries.",
+  "basis_note": "480 catalog rows, field secondary_family; primary counts in the family table are unaffected."
  }
 ]

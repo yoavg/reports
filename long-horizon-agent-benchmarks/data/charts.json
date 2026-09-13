@@ -2,94 +2,101 @@
  "family_by_era": [
   {
    "family": "business-office-enterprise",
-   "y2025": 38,
-   "y2026": 90,
+   "y2025": 28,
+   "y2026": 77,
    "other": 0,
-   "total": 128
+   "total": 105
   },
   {
    "family": "personal-assistant-memory",
-   "y2025": 15,
-   "y2026": 77,
-   "other": 0,
-   "total": 92
-  },
-  {
-   "family": "multi-agent-org",
-   "y2025": 30,
-   "y2026": 35,
+   "y2025": 9,
+   "y2026": 56,
    "other": 0,
    "total": 65
   },
   {
-   "family": "web-GUI",
-   "y2025": 21,
-   "y2026": 22,
+   "family": "embodied-household",
+   "y2025": 23,
+   "y2026": 23,
    "other": 0,
-   "total": 43
+   "total": 46
   },
   {
-   "family": "embodied-household",
-   "y2025": 22,
-   "y2026": 19,
+   "family": "multi-agent-org",
+   "y2025": 21,
+   "y2026": 23,
    "other": 0,
-   "total": 41
+   "total": 44
+  },
+  {
+   "family": "web-GUI",
+   "y2025": 18,
+   "y2026": 21,
+   "other": 0,
+   "total": 39
   },
   {
    "family": "open-world-game",
-   "y2025": 15,
-   "y2026": 11,
+   "y2025": 19,
+   "y2026": 15,
    "other": 0,
-   "total": 26
+   "total": 34
+  },
+  {
+   "family": "tool-use-API",
+   "y2025": 8,
+   "y2026": 23,
+   "other": 0,
+   "total": 31
+  },
+  {
+   "family": "OS-computer-use",
+   "y2025": 8,
+   "y2026": 16,
+   "other": 0,
+   "total": 24
+  },
+  {
+   "family": "customer-service-dialogue",
+   "y2025": 6,
+   "y2026": 17,
+   "other": 0,
+   "total": 23
   },
   {
    "family": "scientific-discovery",
    "y2025": 4,
-   "y2026": 17,
+   "y2026": 18,
    "other": 0,
-   "total": 21
+   "total": 22
   },
   {
    "family": "travel-and-constraint-planning",
-   "y2025": 8,
-   "y2026": 10,
+   "y2025": 10,
+   "y2026": 9,
+   "other": 0,
+   "total": 19
+  },
+  {
+   "family": "open-ended-sandbox",
+   "y2025": 7,
+   "y2026": 11,
    "other": 0,
    "total": 18
   },
   {
-   "family": "customer-service-dialogue",
-   "y2025": 3,
-   "y2026": 14,
-   "other": 0,
-   "total": 17
-  },
-  {
-   "family": "tool-use-API",
-   "y2025": 4,
-   "y2026": 12,
-   "other": 0,
-   "total": 16
-  },
-  {
-   "family": "OS-computer-use",
-   "y2025": 2,
-   "y2026": 5,
-   "other": 0,
-   "total": 7
-  },
-  {
    "family": "healthcare-clinical",
-   "y2025": 0,
-   "y2026": 3,
+   "y2025": 1,
+   "y2026": 7,
    "other": 0,
-   "total": 3
+   "total": 8
   },
   {
-   "family": "other",
+   "family": "education-tutoring",
    "y2025": 0,
-   "y2026": 3,
+   "y2026": 2,
    "other": 0,
-   "total": 3
+   "total": 2
   }
  ],
  "horizon_unit": [

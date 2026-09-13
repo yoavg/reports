@@ -21,7 +21,7 @@ memory-and-recall side that this corpus rules out.
 |---|---|
 | [`long-horizon-agent-benchmarks/index.html`](long-horizon-agent-benchmarks/index.html) | **The report** — three questions answered, evidence quoted in the prose, coverage boundary |
 | [`long-horizon-agent-benchmarks/catalog.html`](long-horizon-agent-benchmarks/catalog.html) | **The catalogue** — all 480 rows as a sortable, filterable table grouped by domain |
-| `long-horizon-agent-benchmarks/data/catalog.csv` | all 480 rows with evidence spans and links — open in a spreadsheet |
+| `long-horizon-agent-benchmarks/data/catalog.csv` | all 480 rows with evidence spans, citation counts and links — open in a spreadsheet |
 | `long-horizon-agent-benchmarks/data/catalog.json` | the same rows with full verbatim spans |
 | `long-horizon-agent-benchmarks/data/catalog-aggregates.json` | every number quoted in the report, script-computed |
 | `long-horizon-agent-benchmarks/data/charts.json` | every chart series exactly as rendered |
@@ -52,6 +52,14 @@ also served as web pages: [the report](https://yoavg.github.io/reports/long-hori
   at all.
 - Goal structure is dominated by **sequential chains (160)** and **DAGs with precedence (125)**;
   hierarchical decomposition accounts for 80 and open-ended goal generation for 31.
+- The corpus spans **14 domain families**, led by business/office/enterprise
+  (105), personal assistants & memory (65) and embodied & robotics
+  (46). Every family assignment comes from the domain the extractor recorded after
+  reading the paper; **139 artifacts span two families** and carry a
+  recorded secondary.
+- Each row carries a **citation count**. With 318 of 480 entries from 2026
+  and 126 at zero (median 3, max 456),
+  that column measures age far more than quality — it is shipped for sorting, not for ranking.
 - **2026 outnumbers 2025 by 318 to 162.** The field is reorganising around long-horizon
   evaluation in real time, and a whole genre of explicitly long-horizon artifacts now exists that
   did not in 2024.
@@ -76,6 +84,12 @@ also served as web pages: [the report](https://yoavg.github.io/reports/long-hori
   papers unjudged.
 - The subgoal-credit split depends on a keyword classifier over the extracted scoring field;
   87 rows sit in a labelled unclassified tail and count on neither side.
+- Family counts were corrected on 2026-09-14: an earlier ordered-keyword rollup let a title word
+  override the extractor's own domain call (a Slay the Spire testbed was filed under memory because
+  its title said "Bounded-Memory"). That version over-counted business by 31, assistants by 29 and
+  multi-agent by 25, under-counted tool-use and OS/computer-use by 16 each, and hid the
+  open-ended-sandbox family entirely. The three headline findings above are unaffected — they never
+  depended on family.
 - Counts are per-artifact and single-extractor. Three probe papers placed in every extraction
   batch were identified identically by all eight extractors but drifted on structure vocabulary.
 

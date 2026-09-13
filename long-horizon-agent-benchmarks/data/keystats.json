@@ -9,7 +9,12 @@
  "subgoal_credit_unclear": 37,
  "y2025": 162,
  "y2026": 318,
- "families": 13,
+ "families": 14,
+ "secondary_family_recorded": 139,
+ "family_from_extracted_domain": 480,
+ "citations_max": 456,
+ "citations_median": 3,
+ "citations_zero": 126,
  "cost_actual": {
   "fleet_subagents": 25,
   "fleet_model_tier": "sonnet-class",
