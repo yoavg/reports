@@ -2,6 +2,8 @@
 
 Research reports and their underlying data.
 
+**Read them in the browser: <https://yoavg.github.io/reports/>**
+
 ## agent-memory-benchmarks (2026-09-12)
 
 A corpus survey of long-term-memory and long-horizon benchmarks for LLM agents.
@@ -17,8 +19,10 @@ candidates — every candidate relevance-judged, every in-charter row extracted 
 | `agent-memory-benchmarks/data/synthesis.json` | for each pooled claim: because / unless / basis note |
 | `agent-memory-benchmarks/data/coverage-verdict.md` | what the corpus does not cover |
 
-Both HTML files are self-contained — clone and open them directly, no server needed.
-(GitHub will not render them inline; use a raw-HTML viewer or open the local file.)
+Both HTML files are self-contained — clone and open them directly, no server needed. They are
+also served as web pages: [the report](https://yoavg.github.io/reports/agent-memory-benchmarks/index.html)
+· [the catalogue](https://yoavg.github.io/reports/agent-memory-benchmarks/catalog.html).
+(GitHub's own file view shows the source rather than rendering it — use those links.)
 
 ### What it found
 
