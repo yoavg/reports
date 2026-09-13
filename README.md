@@ -4,6 +4,81 @@ Research reports and their underlying data.
 
 **Read them in the browser: <https://yoavg.github.io/reports/>**
 
+## long-horizon-agent-benchmarks (2026-09-14)
+
+A corpus survey of benchmarks, datasets, environments and scenario suites published in
+**2025–2026** whose settings require an LLM agent to pursue and track **multiple goals and
+subgoals**. **480 artifacts**, drawn from 4,327 screened candidates with 2,191 relevance-judged
+and every surviving artifact extracted under two lenses (goal structure, time horizon).
+
+Deliberately scoped: software engineering and every other code-centric task domain is excluded,
+as are pre-2025 artifacts. The decisive test is **goal multiplicity, not duration** — a benchmark
+whose task is one goal grounded in a long history is out; a setting that generates or demands many
+goals is in. This is the complement of `agent-memory-benchmarks` below, which covers the
+memory-and-recall side that this corpus rules out.
+
+| file | what it is |
+|---|---|
+| [`long-horizon-agent-benchmarks/index.html`](long-horizon-agent-benchmarks/index.html) | **The report** — three questions answered, evidence quoted in the prose, coverage boundary |
+| [`long-horizon-agent-benchmarks/catalog.html`](long-horizon-agent-benchmarks/catalog.html) | **The catalogue** — all 480 rows as a sortable, filterable table grouped by domain |
+| `long-horizon-agent-benchmarks/data/catalog.csv` | all 480 rows with evidence spans and links — open in a spreadsheet |
+| `long-horizon-agent-benchmarks/data/catalog.json` | the same rows with full verbatim spans |
+| `long-horizon-agent-benchmarks/data/catalog-aggregates.json` | every number quoted in the report, script-computed |
+| `long-horizon-agent-benchmarks/data/charts.json` | every chart series exactly as rendered |
+| `long-horizon-agent-benchmarks/data/synthesis.json` | for each pooled claim: because / unless / basis note |
+| `long-horizon-agent-benchmarks/data/coverage-verdict.md` | what the corpus does not cover, with every estimator used or gated |
+| `long-horizon-agent-benchmarks/data/retrieval-filter-probe.md` | the measured false-negative rate of the retrieval filter |
+| `long-horizon-agent-benchmarks/data/extractor-agreement.json` | consistency probes repeated across every extractor |
+| `long-horizon-agent-benchmarks/data/scope-caveats.json` | artifacts kept but carrying a noted scope caveat |
+
+Both HTML files are self-contained — clone and open them directly, no server needed. They are
+also served as web pages: [the report](https://yoavg.github.io/reports/long-horizon-agent-benchmarks/index.html)
+· [the catalogue](https://yoavg.github.io/reports/long-horizon-agent-benchmarks/catalog.html).
+
+### What it found
+
+- **334 of 480 (70%) never quantify a time horizon at all** — no step count, no turn count, no
+  wall-clock figure, no simulated duration. Many describe their tasks as "long-horizon" in prose
+  while reporting only task counts, model counts and success rates.
+- The **146 that do quantify share no unit**: turns, agent-steps, actions, simulated-days,
+  episodes, sessions, tool-calls, wall-clock hours and minutes, human-expert-hours, simulated-years
+  and tokens-per-run — **13 incommensurable unit families**. Cross-benchmark horizon comparison is
+  not currently possible.
+- **297 of 480 (62%) hand the agent all of its goals up front.** Only **15 (3%)** have the agent
+  generate its own goals; 70 (15%) have the environment emit goals over time. Self-directed goal
+  generation is close to absent from the evaluation literature.
+- **291 of 480 (61%) award subgoal-, checkpoint- or milestone-level partial credit**; 152 score
+  final outcomes only. Partial-credit scoring is what makes *where* an agent broke down visible
+  at all.
+- Goal structure is dominated by **sequential chains (160)** and **DAGs with precedence (125)**;
+  hierarchical decomposition accounts for 80 and open-ended goal generation for 31.
+- **2026 outnumbers 2025 by 318 to 162.** The field is reorganising around long-horizon
+  evaluation in real time, and a whole genre of explicitly long-horizon artifacts now exists that
+  did not in 2024.
+
+### Honest caveats
+
+- **Not exhaustive: at least ~131 further in-scope artifacts are estimated missing**
+  (capture-recapture lower bound, calibrated pairing only). Applying this methodology's measured
+  ~2× history and the 62% single-modality share, the honest range is **~130–320 missing, i.e.
+  roughly 60–80% of the reachable population captured**.
+- **The headline horizon finding is a claim about what papers foreground.** 276 of the 334
+  "no horizon" determinations were made from the abstract; only 56 were confirmed against full
+  text. The full-paper rate is unmeasured for the rest.
+- **The 2026 half is the least externally validated** — only 1 of 85 independently enumerated
+  canonical benchmarks was from 2026, so that stratum rests on retrieval and forward citations
+  alone.
+- **The depth leg of the sweep never ran**: the search backend refused all 13 diligent
+  escalations, leaving 4,186 un-probed discards on those angles. A 20-angle axis-switched sweep
+  was substituted and found 581 new candidates, but that is breadth, not depth.
+- **The lower-priority tail was sampled, not enumerated**, under a numeric threshold fixed in
+  writing before any result was seen; no decile crossed it, leaving an estimated ~135 relevant
+  papers unjudged.
+- The subgoal-credit split depends on a keyword classifier over the extracted scoring field;
+  87 rows sit in a labelled unclassified tail and count on neither side.
+- Counts are per-artifact and single-extractor. Three probe papers placed in every extraction
+  batch were identified identically by all eight extractors but drifted on structure vocabulary.
+
 ## agent-memory-benchmarks (2026-09-12)
 
 A corpus survey of long-term-memory and long-horizon benchmarks for LLM agents.

@@ -1,0 +1,34 @@
+{
+ "276575302": {
+  "n_extractors": 8,
+  "artifact_name_variants": [
+   "Vending-Bench"
+  ],
+  "decomposition_variants": [
+   "open-ended"
+  ]
+ },
+ "280635129": {
+  "n_extractors": 8,
+  "artifact_name_variants": [
+   "OdysseyBench"
+  ],
+  "decomposition_variants": [
+   "DAG-with-precedence",
+   "sequential-chain"
+  ]
+ },
+ "276961240": {
+  "n_extractors": 8,
+  "artifact_name_variants": [
+   "Factorio Learning Environment (FLE)"
+  ],
+  "decomposition_variants": [
+   "hierarchical",
+   "other:fixed-independent-tasks-in-lab-play-open-ended-in-open-play",
+   "other:hierarchical-fixed-tasks-in-lab-play/open-ended-scaling-in-open-play",
+   "other:hierarchical-in-lab-play,-open-ended-in-open-play",
+   "other:set-of-independent-lab-tasks-plus-open-ended-open-play"
+  ]
+ }
+}

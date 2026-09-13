@@ -1,0 +1,25 @@
+{
+ "corpus_core": 480,
+ "candidates": 4327,
+ "judged": 2191,
+ "horizon_absent": 334,
+ "horizon_present": 146,
+ "subgoal_credit_yes": 291,
+ "subgoal_credit_no": 152,
+ "subgoal_credit_unclear": 37,
+ "y2025": 162,
+ "y2026": 318,
+ "families": 13,
+ "cost_actual": {
+  "fleet_subagents": 25,
+  "fleet_model_tier": "sonnet-class",
+  "subagent_tokens_total": 6100000,
+  "main_loop_note": "opus-class main loop; cache-read dominated",
+  "estimate_usd_list_prices": "~180-260 at API list prices (estimate, labeled as such)",
+  "acquisition_calls": {
+   "paper_finder_queries": 55,
+   "s2_paper_fetches": "~3100",
+   "s2_edge_fetches": 532
+  }
+ }
+}

@@ -1,0 +1,50 @@
+[
+ {
+  "claim": "Of 480 catalogued artifacts, 332 (69%) give no quantified time horizon and 148 (31%) do.",
+  "because": "Support composition is 148 own-experiment/benchmark-design records against 332 absence records, and absence here is a CLAIM with a basis span showing what the paper reports instead (task counts, model counts, success rates), not a silent null. Fit is explicit on 299 of the 332 absence rows.",
+  "unless": "unless the absence is an artifact of abstract brevity rather than the papers: only 56 of the 332 absence rows were escalated to full text, and extractor confidence was 1 (not 2) on 258 of 332 \u2014 so this is a claim about what these papers FOREGROUND, and the full-paper rate is unmeasured for the other 276.",
+  "basis_note": "480 horizon-lens extraction records, one per core paper, deduped by (corpusId, lens); 56 escalated to full text and still yielded no figure."
+ },
+ {
+  "claim": "Where a horizon IS stated, the 148 papers use 13 mutually incommensurable units \u2014 turns (26), agent-steps (22), actions (17), simulated-days (16), episodes (8), sessions (8), tool-calls (7), wall-clock-hours (6), wall-clock-minutes (4), human-expert-hours (3), simulated-years (3), wall-clock-days (1), plus 25 one-off units.",
+  "because": "Each unit count comes from a verbatim span in the paper's own words, so the diversity is the field's, not an artifact of coding; 144 of the 148 present-records rest on own-experiment support.",
+  "unless": "unless the unit families are collapsible in ways this coding does not attempt \u2014 'turns' and 'agent-steps' may be the same quantity under two names in some benchmarks, which would reduce the count but not the incommensurability across the wall-clock / simulated-time / step-count groups.",
+  "basis_note": "148 horizon records with polarity=present; horizon_unit normalized to families with a labeled singleton tail of 25."
+ },
+ {
+  "claim": "291 of 480 (61%) award subgoal- or checkpoint-level partial credit; 152 (32%) score only final outcomes; 37 (8%) do not record a scoring scheme.",
+  "because": "Classification runs over the extractors' scoring field, which was written from a verbatim span per paper; the three classes are kept distinct with 'not recorded' as its own class rather than folded into an 'other' bucket.",
+  "unless": "unless the keyword classifier over-assigns partial credit: it fires on rubric/progress/coverage/trajectory language, which a paper may use for reporting without awarding intermediate credit during evaluation. 87 rows remain in a labeled 'other (unclassified)' tail and are not counted on either side.",
+  "basis_note": "480 goal-structure extraction records; scoring classified to answer the asked question (does subgoal-level credit exist) rather than left as 432 raw strings."
+ },
+ {
+  "claim": "Goal structure is dominated by sequential chains (160) and DAGs with precedence (125); hierarchical decomposition accounts for 80, sets of independent goals 71, and open-ended goal generation only 31.",
+  "because": "Each value is the extractor's kind-typed choice from a fixed vocabulary, grounded in a verbatim span describing how the setting's goals relate.",
+  "unless": "unless 'sequential-chain' is absorbing cases that are really DAGs whose precedence the abstract does not spell out \u2014 the two are distinguishable only when a paper describes its dependency structure, which many do not.",
+  "basis_note": "480 goal-structure records; decomposition normalized by leading enum token, 13 singletons kept in a labeled tail."
+ },
+ {
+  "claim": "297 of 480 (62%) hand the agent all its goals up front; only 15 (3%) have the agent generate its own goals, and 70 (15%) have the environment emit goals over time.",
+  "because": "goal_origin is a kind-typed field with a fixed vocabulary; the mixed class (61) was folded from 'mixed:*' variants rather than dropped.",
+  "unless": "unless 'given-up-front' is over-applied to benchmarks whose task instruction is given up front but whose subgoals genuinely emerge during execution \u2014 the field records how GOALS arrive, and extractors may have keyed on the instruction rather than the subgoal stream.",
+  "basis_note": "480 goal-structure records; goal_origin normalized to 6 families."
+ },
+ {
+  "claim": "The corpus splits into 13 domain families, led by business/office/enterprise, personal-assistant & memory, multi-agent organisations, embodied & robotics, and web/GUI; 2026 outnumbers 2025 across the corpus.",
+  "because": "Family assignment composes the extractor's kind-typed domain field with the judge's domain open-code and the title, applied by a single deterministic rule over all 480 rows.",
+  "unless": "unless the family boundaries are doing work the reader would draw differently \u2014 'business/office/enterprise' absorbs retail, finance and workplace simulation, and a reader interested specifically in enterprise software work would want that split further.",
+  "basis_note": "480 catalog rows; per-family era counts computed from the candidate year field."
+ },
+ {
+  "claim": "Acquisition modality yields over the core are concentrated: paper-finder sweeps and forward-citation each account for roughly two thirds of the core, registry enumeration and parametric memory for far less.",
+  "because": "Counts come from the provenance union on every candidate row, which records every modality that found a paper rather than the first one.",
+  "unless": "unless the low registry and parametric shares are read as those modalities being unproductive \u2014 the anchor analysis shows the opposite, that registry enumeration surfaced 17 core papers no other route had judged.",
+  "basis_note": "480 core rows, provenance union; a paper found by two modalities counts in both."
+ },
+ {
+  "claim": "350 of the artifacts describe themselves as benchmarks and 101 as environments or simulators, with 17 datasets, 8 scenario suites and 3 arenas.",
+  "because": "artifact_kind is a kind-typed extraction field taken from the paper's own self-description.",
+  "unless": "unless the benchmark/environment distinction is softer than the counts suggest \u2014 several artifacts ship an interactive environment AND a fixed task set, and extractors had to pick one label.",
+  "basis_note": "480 goal-structure records."
+ }
+]

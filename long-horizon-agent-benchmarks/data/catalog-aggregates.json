@@ -1,0 +1,341 @@
+{
+ "headline": {
+  "corpus_core": 480,
+  "candidates": 4327,
+  "judged": 2191,
+  "horizon_absent": 334,
+  "horizon_present": 146,
+  "subgoal_credit_yes": 291,
+  "subgoal_credit_no": 152,
+  "subgoal_credit_unclear": 37,
+  "y2025": 162,
+  "y2026": 318,
+  "families": 13,
+  "cost_actual": {
+   "fleet_subagents": 25,
+   "fleet_model_tier": "sonnet-class",
+   "subagent_tokens_total": 6100000,
+   "main_loop_note": "opus-class main loop; cache-read dominated",
+   "estimate_usd_list_prices": "~180-260 at API list prices (estimate, labeled as such)",
+   "acquisition_calls": {
+    "paper_finder_queries": 55,
+    "s2_paper_fetches": "~3100",
+    "s2_edge_fetches": 532
+   }
+  }
+ },
+ "distributions": {
+  "family_by_era": [
+   {
+    "family": "business-office-enterprise",
+    "y2025": 38,
+    "y2026": 90,
+    "other": 0,
+    "total": 128
+   },
+   {
+    "family": "personal-assistant-memory",
+    "y2025": 15,
+    "y2026": 77,
+    "other": 0,
+    "total": 92
+   },
+   {
+    "family": "multi-agent-org",
+    "y2025": 30,
+    "y2026": 35,
+    "other": 0,
+    "total": 65
+   },
+   {
+    "family": "web-GUI",
+    "y2025": 21,
+    "y2026": 22,
+    "other": 0,
+    "total": 43
+   },
+   {
+    "family": "embodied-household",
+    "y2025": 22,
+    "y2026": 19,
+    "other": 0,
+    "total": 41
+   },
+   {
+    "family": "open-world-game",
+    "y2025": 15,
+    "y2026": 11,
+    "other": 0,
+    "total": 26
+   },
+   {
+    "family": "scientific-discovery",
+    "y2025": 4,
+    "y2026": 17,
+    "other": 0,
+    "total": 21
+   },
+   {
+    "family": "travel-and-constraint-planning",
+    "y2025": 8,
+    "y2026": 10,
+    "other": 0,
+    "total": 18
+   },
+   {
+    "family": "customer-service-dialogue",
+    "y2025": 3,
+    "y2026": 14,
+    "other": 0,
+    "total": 17
+   },
+   {
+    "family": "tool-use-API",
+    "y2025": 4,
+    "y2026": 12,
+    "other": 0,
+    "total": 16
+   },
+   {
+    "family": "OS-computer-use",
+    "y2025": 2,
+    "y2026": 5,
+    "other": 0,
+    "total": 7
+   },
+   {
+    "family": "healthcare-clinical",
+    "y2025": 0,
+    "y2026": 3,
+    "other": 0,
+    "total": 3
+   },
+   {
+    "family": "other",
+    "y2025": 0,
+    "y2026": 3,
+    "other": 0,
+    "total": 3
+   }
+  ],
+  "horizon_unit": [
+   {
+    "label": "not recorded",
+    "n": 334
+   },
+   {
+    "label": "turns",
+    "n": 26
+   },
+   {
+    "label": "other (singleton)",
+    "n": 25
+   },
+   {
+    "label": "agent-steps",
+    "n": 22
+   },
+   {
+    "label": "actions",
+    "n": 17
+   },
+   {
+    "label": "simulated-days",
+    "n": 16
+   },
+   {
+    "label": "episodes",
+    "n": 8
+   },
+   {
+    "label": "sessions",
+    "n": 8
+   },
+   {
+    "label": "tool-calls",
+    "n": 7
+   },
+   {
+    "label": "wall-clock-hours",
+    "n": 6
+   },
+   {
+    "label": "wall-clock-minutes",
+    "n": 4
+   },
+   {
+    "label": "human-expert-hours",
+    "n": 3
+   },
+   {
+    "label": "simulated-years",
+    "n": 3
+   },
+   {
+    "label": "wall-clock-days",
+    "n": 1
+   }
+  ],
+  "goal_origin": [
+   {
+    "label": "given-up-front",
+    "n": 297
+   },
+   {
+    "label": "emitted-by-environment-over-time",
+    "n": 70
+   },
+   {
+    "label": "mixed",
+    "n": 61
+   },
+   {
+    "label": "implied-by-constraints",
+    "n": 19
+   },
+   {
+    "label": "injected-by-user-mid-episode",
+    "n": 18
+   },
+   {
+    "label": "self-generated-by-agent",
+    "n": 15
+   }
+  ],
+  "decomposition": [
+   {
+    "label": "sequential-chain",
+    "n": 160
+   },
+   {
+    "label": "DAG-with-precedence",
+    "n": 125
+   },
+   {
+    "label": "hierarchical",
+    "n": 80
+   },
+   {
+    "label": "set-of-independent",
+    "n": 71
+   },
+   {
+    "label": "open-ended",
+    "n": 31
+   },
+   {
+    "label": "other (singleton)",
+    "n": 13
+   }
+  ],
+  "scoring": [
+   {
+    "label": "subgoal / checkpoint partial credit",
+    "n": 291
+   },
+   {
+    "label": "other (unclassified)",
+    "n": 87
+   },
+   {
+    "label": "not recorded",
+    "n": 37
+   },
+   {
+    "label": "binary final success only",
+    "n": 32
+   },
+   {
+    "label": "continuous / cumulative reward",
+    "n": 25
+   },
+   {
+    "label": "programmatic verifier",
+    "n": 6
+   },
+   {
+    "label": "LLM-judge or expert rubric",
+    "n": 2
+   }
+  ],
+  "subgoal_credit": [
+   {
+    "label": "yes",
+    "n": 291
+   },
+   {
+    "label": "no",
+    "n": 152
+   },
+   {
+    "label": "unclear",
+    "n": 37
+   }
+  ],
+  "artifact_kind": [
+   {
+    "label": "benchmark",
+    "n": 350
+   },
+   {
+    "label": "environment/simulator",
+    "n": 101
+   },
+   {
+    "label": "dataset",
+    "n": 17
+   },
+   {
+    "label": "scenario-suite",
+    "n": 8
+   },
+   {
+    "label": "arena/leaderboard",
+    "n": 3
+   },
+   {
+    "label": "other:deployed-multi-agent-assistant-system",
+    "n": 1
+   }
+  ],
+  "horizon_stated": [
+   {
+    "label": "no",
+    "n": 334
+   },
+   {
+    "label": "yes",
+    "n": 146
+   }
+  ],
+  "tier": [
+   {
+    "label": "relevant",
+    "n": 298
+   },
+   {
+    "label": "in",
+    "n": 182
+   }
+  ],
+  "modality_yield": [
+   {
+    "label": "asta-find",
+    "n": 323
+   },
+   {
+    "label": "forward-citation",
+    "n": 304
+   },
+   {
+    "label": "web-registry",
+    "n": 43
+   },
+   {
+    "label": "parametric",
+    "n": 22
+   }
+  ]
+ },
+ "note": "Every number quoted in index.html and catalog.html is computed from catalog.json by work/build_report_data.py and appears here. headline = the figures in the prose and KPI tiles; distributions = every chart series as rendered."
+}
