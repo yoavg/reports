@@ -11,7 +11,7 @@ candidates — every candidate relevance-judged, every in-charter row extracted 
 | file | what it is |
 |---|---|
 | [`agent-memory-benchmarks/index.html`](agent-memory-benchmarks/index.html) | **The report** — findings, evidence in the prose, coverage boundary |
-| [`agent-memory-benchmarks/catalog.html`](agent-memory-benchmarks/catalog.html) | **The catalogue** — all 995 rows, newest first, filterable |
+| [`agent-memory-benchmarks/catalog.html`](agent-memory-benchmarks/catalog.html) | **The catalogue** — all 995 rows, newest first, filterable, now with an external-memory column |
 | `agent-memory-benchmarks/data/catalog.csv` | all 995 rows with evidence spans and links — open in a spreadsheet |
 | `agent-memory-benchmarks/data/catalog-aggregates.json` | every number quoted in the report, script-computed |
 | `agent-memory-benchmarks/data/synthesis.json` | for each pooled claim: because / unless / basis note |
@@ -31,6 +31,20 @@ Both HTML files are self-contained — clone and open them directly, no server n
   (21.5 years)** across 8 incommensurable unit families, none holding more than 21% of mentions.
 - **304 of 995 (31%)** ship alongside a memory *method* rather than as benchmark-first
   contributions; 24 ship no artifact at all.
+
+### External-memory column — in progress
+
+The catalogue records whether each benchmark involves a store **outside the model's context
+window** (files, database, vector store, scratchpad) and whose it is — the agent's own memory,
+the task environment's state, or a fixed corpus it retrieves from. A long context window does
+not count.
+
+**This column is not finished.** A cheap first pass was measured against 10 hand-read gold items
+at only **72%** agreement on present/absent and **47.5%** on the whose split; the careful pass now
+running is **overturning about a third** of it. Rows it has reached are marked `sonnet-verified`
+or `gold` in the CSV and are reliable; the rest are marked `haiku-unverified`, shown as
+**provisional** in the catalogue, and expected to change. Current split: 548 present / 447 absent,
+**48% verified**. This section will be updated when the verification completes.
 
 ### Honest caveats
 

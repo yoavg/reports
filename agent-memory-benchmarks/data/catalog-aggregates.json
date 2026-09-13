@@ -453,5 +453,44 @@
    "title-only": 12
   },
   "summary_written": 995
+ },
+ "external_memory": {
+  "present": 548,
+  "absent": 447,
+  "whose": {
+   "retrieval-corpus": 144,
+   "agent-memory": 299,
+   "environment-state": 76
+  },
+  "kinds": {
+   "memory-module": 265,
+   "retrieval-index": 115,
+   "database": 94,
+   "scratchpad": 19,
+   "file-system": 29,
+   "memory-bank": 12,
+   "persistent-store": 3,
+   "vector-store": 21,
+   "knowledge-graph": 46,
+   "rag": 13,
+   "spatial-map": 1,
+   "key-value-store": 19,
+   "interaction-log": 1,
+   "external-memory": 5,
+   "episodic-index": 1,
+   "skill-library": 4,
+   "log": 1,
+   "state-store": 1,
+   "file-based-memory": 1,
+   "file-store": 1,
+   "web-search-index": 1
+  },
+  "decided_by": {
+   "sonnet-verified": 464,
+   "haiku-unverified": 521,
+   "gold (hand-read)": 10
+  },
+  "verified_fraction": 0.476,
+  "method_note": "Two-pass, IN PROGRESS. A haiku first pass scored only 72% against 10 hand-read gold items on present/absent and 47.5% on the whose split; a sonnet verification pass is overturning ~34% of it. Rows marked sonnet-verified or gold are reliable; rows marked haiku-unverified are PROVISIONAL and a third of them are expected to change."
  }
 }
