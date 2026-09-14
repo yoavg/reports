@@ -1,0 +1,204 @@
+{
+ "search_tools": {
+  "rows": {
+   "web-search-api": 216,
+   "local-retriever": 175,
+   "web-browser": 122,
+   "code-execution": 96,
+   "domain-api": 85,
+   "multimodal-viewer": 84,
+   "agent-choice": 57,
+   "file-reader": 56,
+   "not stated by the paper": 53,
+   "structured-query": 51
+  },
+  "n": 481,
+  "caption": "What the agent may search with. Counted as artifacts offering each tool, over the 481 in the corpus; most grant several, so the bars sum above 481. Papers that never state a tool set are their own bar."
+ },
+ "search_access": {
+  "rows": {
+   "open-web": 137,
+   "fixed-corpus": 125,
+   "mixed": 124,
+   "not-stated": 51,
+   "structured-database": 27,
+   "simulated-or-sandboxed-web": 12,
+   "single-site": 5
+  },
+  "n": 481,
+  "caption": "How open the search space is (n=481)"
+ },
+ "flags": {
+  "step_dependency": {
+   "label": "step dependency",
+   "n": 481,
+   "rows": {
+    "adaptive": 181,
+    "fixed-chain": 144,
+    "not-determinable": 85,
+    "mixed": 52,
+    "independent": 19
+   },
+   "caption": "How the 481 core-ring artifacts distribute on step dependency (n=481)"
+  },
+  "decomposition_known_upfront": {
+   "label": "decomposition known upfront",
+   "n": 481,
+   "rows": {
+    "partially-emergent": 152,
+    "not-determinable": 120,
+    "enumerable-at-start": 115,
+    "fully-emergent": 94
+   },
+   "caption": "How the 481 core-ring artifacts distribute on decomposition known upfront (n=481)"
+  },
+  "answer_multiplicity": {
+   "label": "answer multiplicity",
+   "n": 481,
+   "rows": {
+    "single-verifiable": 241,
+    "open-ended": 78,
+    "set-valued": 64,
+    "not-determinable": 46,
+    "multiple-defensible": 46,
+    "ranked": 6
+   },
+   "caption": "How the 481 core-ring artifacts distribute on answer multiplicity (n=481)"
+  },
+  "coverage_determinability": {
+   "label": "coverage determinability",
+   "n": 481,
+   "rows": {
+    "hard": 144,
+    "not-determinable": 127,
+    "knowable": 123,
+    "estimable": 87
+   },
+   "caption": "How the 481 core-ring artifacts distribute on coverage determinability (n=481)"
+  }
+ },
+ "axes": {
+  "artifact_kind": {
+   "rows": {
+    "benchmark": 363,
+    "dataset": 57,
+    "environment": 25,
+    "task-suite": 24,
+    "live-arena": 10,
+    "not-determinable": 1,
+    "not-recorded": 1
+   },
+   "n": 481,
+   "caption": "artifact kind across the core ring (n=481)"
+  },
+  "source_space": {
+   "rows": {
+    "mixed": 144,
+    "open-web": 115,
+    "curated-corpus": 58,
+    "scientific-literature": 57,
+    "structured-database": 42,
+    "enterprise-documents": 23,
+    "simulated-web": 21,
+    "tool-APIs-as-sources": 10,
+    "not-recorded": 7,
+    "not-determinable": 4
+   },
+   "n": 481,
+   "caption": "source space across the core ring (n=481)"
+  },
+  "task_shape": {
+   "rows": {
+    "single-fact-answer": 159,
+    "synthesised-report": 99,
+    "structured-record": 62,
+    "verified-claim": 29,
+    "mixed-battery": 25,
+    "set-of-entities": 24,
+    "trajectory-graded": 11,
+    "not-recorded": 11,
+    "ranked-list": 10,
+    "audit-of-evidence-use": 8,
+    "open-ended-answer": 7,
+    "forecast": 7,
+    "action-completion": 7,
+    "dialogue-interaction": 6,
+    "not-determinable": 4,
+    "scientific-rediscovery": 3,
+    "multiple-choice-qa": 2,
+    "constraint-satisfying-decision": 2,
+    "knowledge-projection-formalized-queries": 1,
+    "cross-domain-search-and-reasoning": 1,
+    "exploratory-reasoning-query-tree": 1,
+    "cross-modal-inconsistency-detection": 1,
+    "rubric-graded-task": 1
+   },
+   "n": 481,
+   "caption": "task shape across the core ring (n=481)"
+  },
+  "modality": {
+   "rows": {
+    "text-web": 355,
+    "multimodal-mixed": 64,
+    "multimodal-image": 30,
+    "not-determinable": 18,
+    "multimodal-video": 12,
+    "not-recorded": 2
+   },
+   "n": 481,
+   "caption": "modality across the core ring (n=481)"
+  }
+ },
+ "evidence_depth": {
+  "rows": {
+   "full text": 444,
+   "abstract only": 37
+  },
+  "n": 481,
+  "caption": "Evidence depth behind each artifact's flags (n=481)"
+ },
+ "modality_yield": {
+  "rows": {
+   "citation-forward": 240,
+   "asta-find": 229,
+   "prior-corpus:long-horizon": 141,
+   "asta-find-diligent": 121,
+   "registry": 81,
+   "prior-corpus:memory": 62,
+   "gap-survey": 44,
+   "parametric": 27,
+   "registry-trec": 7,
+   "survey-refs": 1
+  },
+  "n": 481,
+  "caption": "Core-ring papers contributed by each acquisition route (routes overlap; a paper found twice counts in both)"
+ },
+ "properties": {
+  "rows": {
+   "F14": 187,
+   "F06": 168,
+   "F15": 130,
+   "F07": 127,
+   "F04": 106,
+   "F08": 97,
+   "F09": 96,
+   "F18": 91,
+   "F17": 76,
+   "F10": 73,
+   "F13": 72,
+   "F16": 70,
+   "F01": 69,
+   "F05": 67,
+   "F03": 61,
+   "other": 55,
+   "F02": 54,
+   "F20": 48,
+   "F12": 47,
+   "F19": 41,
+   "F11": 27,
+   "no property recorded": 16
+  },
+  "n": 465,
+  "caption": "Difficulty properties beyond the four flags, by number of artifacts (multi-label)"
+ }
+}

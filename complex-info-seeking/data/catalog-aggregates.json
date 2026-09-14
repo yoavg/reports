@@ -1,0 +1,624 @@
+{
+ "note": "Every number the report and catalogue quote, script-computed from the run's extraction records. Recompute any of them from catalog.csv / catalog.json and you should get the same answer.",
+ "as_of": "2026-09-14",
+ "citations_as_of": "2026-09-14",
+ "keystats": {
+  "as_of": "2026-09-14",
+  "citations_as_of": "2026-09-14",
+  "papers with a citation count": 478,
+  "median citations": 3,
+  "most cited artifact": 589,
+  "candidates_judged": 3349,
+  "core ring": 481,
+  "headline tier benchmarks": 211,
+  "relevant tier artifacts": 270,
+  "papers with full text evidence": 444,
+  "papers abstract only": 37,
+  "extraction rows": 4114,
+  "fit mix": {
+   "explicit": 1970,
+   "reframed": 1084,
+   "rephrased": 334,
+   "stretch": 460
+  },
+  "support kind mix": {
+   "position-assertion": 1734,
+   "own-experiment": 1318,
+   "benchmark-result": 24,
+   "other:abstract-silent": 210,
+   "qualitative-analysis": 51,
+   "other:system-description": 6,
+   "other:benchmark-design-convention": 1,
+   "theoretical-argument": 5,
+   "other:construction-pipeline-inference": 1,
+   "other:title-only-no-abstract": 24,
+   "other:empty-abstract": 18,
+   "other:abstract-missing": 24,
+   "other:missing-abstract": 4,
+   "other:benchmark-description": 219,
+   "other:title-only": 38,
+   "other:citation-to-other-work": 2,
+   "other:benchmark-design-description": 29,
+   "own-ablation": 3,
+   "other:benchmark-construction": 1,
+   "other:heterogeneous-across-task-types": 1,
+   "other:task-instance-example": 4,
+   "other:task-construction-example": 1,
+   "other:worked-example": 1,
+   "other:task-example": 2,
+   "other:formal-framework-definition": 1,
+   "citation-to-other-work": 1,
+   "other:interface-specification": 1,
+   "other:agent-specification": 4,
+   "other:benchmark-design-specification": 4,
+   "other:evaluation-protocol-specification": 5,
+   "other:shared-task-rules": 2,
+   "other:evaluates-final-output-only": 1,
+   "other:no-content-available": 4,
+   "other:no-fulltext-available": 1,
+   "other:no-text-available": 4,
+   "other:evaluation-only-benchmark": 1,
+   "other:evaluation-pipeline-not-agent-benchmark": 1,
+   "other:paper-description": 35,
+   "other:related-work-description": 1,
+   "other:abstract-description": 4,
+   "other:no-tool-mention": 4,
+   "other:evaluates-external-systems": 1,
+   "other:dataset-release-description": 1,
+   "other:dataset-description": 39,
+   "other:no-abstract-available": 2,
+   "other:evaluator-tool-not-agent-tool": 1,
+   "other:framework-description": 1,
+   "other:no-source-text": 4,
+   "other:agent-description": 3,
+   "other:abstract-only-no-fulltext": 1
+  },
+  "confidence mix": {
+   "2": 1825,
+   "1": 1669,
+   "0": 354
+  },
+  "step dependency not determinable": 85,
+  "decomposition known upfront not determinable": 120,
+  "answer multiplicity not determinable": 46,
+  "coverage determinability not determinable": 127,
+  "step dependency settled by full text": 75,
+  "decomposition known upfront settled by full text": 99,
+  "answer multiplicity settled by full text": 16,
+  "coverage determinability settled by full text": 76,
+  "artifacts stating their search tools": 428,
+  "artifacts not stating search tools": 53,
+  "artifacts with a task summary": 480,
+  "fully emergent and coverage hard": 50
+ },
+ "flags": {
+  "flags": {
+   "step_dependency": {
+    "label": "step dependency",
+    "n": 481,
+    "distribution": {
+     "adaptive": 181,
+     "fixed-chain": 144,
+     "not-determinable": 85,
+     "mixed": 52,
+     "independent": 19
+    },
+    "not_determinable": 85,
+    "not_determinable_pct": 17.7,
+    "settled_by_depth": {
+     "abstract": 406,
+     "fulltext": 75
+    },
+    "settled_by_fulltext": 75,
+    "by_tier": {
+     "relevant": {
+      "adaptive": 98,
+      "fixed-chain": 85,
+      "not-determinable": 57,
+      "mixed": 19,
+      "independent": 11
+     },
+     "in": {
+      "adaptive": 83,
+      "fixed-chain": 59,
+      "mixed": 33,
+      "not-determinable": 28,
+      "independent": 8
+     }
+    }
+   },
+   "decomposition_known_upfront": {
+    "label": "decomposition known upfront",
+    "n": 481,
+    "distribution": {
+     "partially-emergent": 152,
+     "not-determinable": 120,
+     "enumerable-at-start": 115,
+     "fully-emergent": 94
+    },
+    "not_determinable": 120,
+    "not_determinable_pct": 24.9,
+    "settled_by_depth": {
+     "abstract": 382,
+     "fulltext": 99
+    },
+    "settled_by_fulltext": 99,
+    "by_tier": {
+     "relevant": {
+      "not-determinable": 95,
+      "partially-emergent": 72,
+      "enumerable-at-start": 64,
+      "fully-emergent": 39
+     },
+     "in": {
+      "partially-emergent": 80,
+      "fully-emergent": 55,
+      "enumerable-at-start": 51,
+      "not-determinable": 25
+     }
+    }
+   },
+   "answer_multiplicity": {
+    "label": "answer multiplicity",
+    "n": 481,
+    "distribution": {
+     "single-verifiable": 241,
+     "open-ended": 78,
+     "set-valued": 64,
+     "not-determinable": 46,
+     "multiple-defensible": 46,
+     "ranked": 6
+    },
+    "not_determinable": 46,
+    "not_determinable_pct": 9.6,
+    "settled_by_depth": {
+     "abstract": 465,
+     "fulltext": 16
+    },
+    "settled_by_fulltext": 16,
+    "by_tier": {
+     "relevant": {
+      "single-verifiable": 138,
+      "open-ended": 39,
+      "not-determinable": 36,
+      "set-valued": 27,
+      "multiple-defensible": 24,
+      "ranked": 6
+     },
+     "in": {
+      "single-verifiable": 103,
+      "open-ended": 39,
+      "set-valued": 37,
+      "multiple-defensible": 22,
+      "not-determinable": 10
+     }
+    }
+   },
+   "coverage_determinability": {
+    "label": "coverage determinability",
+    "n": 481,
+    "distribution": {
+     "hard": 144,
+     "not-determinable": 127,
+     "knowable": 123,
+     "estimable": 87
+    },
+    "not_determinable": 127,
+    "not_determinable_pct": 26.4,
+    "settled_by_depth": {
+     "abstract": 405,
+     "fulltext": 76
+    },
+    "settled_by_fulltext": 76,
+    "by_tier": {
+     "relevant": {
+      "not-determinable": 110,
+      "knowable": 61,
+      "hard": 53,
+      "estimable": 46
+     },
+     "in": {
+      "hard": 91,
+      "knowable": 62,
+      "estimable": 41,
+      "not-determinable": 17
+     }
+    }
+   }
+  },
+  "combinations_top": [
+   {
+    "values": {
+     "step_dependency": "not-determinable",
+     "decomposition_known_upfront": "not-determinable",
+     "answer_multiplicity": "not-determinable",
+     "coverage_determinability": "not-determinable"
+    },
+    "n": 24
+   },
+   {
+    "values": {
+     "step_dependency": "fixed-chain",
+     "decomposition_known_upfront": "enumerable-at-start",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "knowable"
+    },
+    "n": 22
+   },
+   {
+    "values": {
+     "step_dependency": "adaptive",
+     "decomposition_known_upfront": "fully-emergent",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "hard"
+    },
+    "n": 20
+   },
+   {
+    "values": {
+     "step_dependency": "adaptive",
+     "decomposition_known_upfront": "partially-emergent",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "hard"
+    },
+    "n": 16
+   },
+   {
+    "values": {
+     "step_dependency": "adaptive",
+     "decomposition_known_upfront": "not-determinable",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "not-determinable"
+    },
+    "n": 12
+   },
+   {
+    "values": {
+     "step_dependency": "not-determinable",
+     "decomposition_known_upfront": "not-determinable",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "not-determinable"
+    },
+    "n": 11
+   },
+   {
+    "values": {
+     "step_dependency": "adaptive",
+     "decomposition_known_upfront": "partially-emergent",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "knowable"
+    },
+    "n": 11
+   },
+   {
+    "values": {
+     "step_dependency": "fixed-chain",
+     "decomposition_known_upfront": "enumerable-at-start",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "not-determinable"
+    },
+    "n": 9
+   },
+   {
+    "values": {
+     "step_dependency": "adaptive",
+     "decomposition_known_upfront": "partially-emergent",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "not-determinable"
+    },
+    "n": 8
+   },
+   {
+    "values": {
+     "step_dependency": "adaptive",
+     "decomposition_known_upfront": "fully-emergent",
+     "answer_multiplicity": "open-ended",
+     "coverage_determinability": "hard"
+    },
+    "n": 8
+   },
+   {
+    "values": {
+     "step_dependency": "adaptive",
+     "decomposition_known_upfront": "fully-emergent",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "estimable"
+    },
+    "n": 7
+   },
+   {
+    "values": {
+     "step_dependency": "not-determinable",
+     "decomposition_known_upfront": "not-determinable",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "knowable"
+    },
+    "n": 7
+   },
+   {
+    "values": {
+     "step_dependency": "adaptive",
+     "decomposition_known_upfront": "fully-emergent",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "knowable"
+    },
+    "n": 7
+   },
+   {
+    "values": {
+     "step_dependency": "mixed",
+     "decomposition_known_upfront": "partially-emergent",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "hard"
+    },
+    "n": 7
+   },
+   {
+    "values": {
+     "step_dependency": "fixed-chain",
+     "decomposition_known_upfront": "partially-emergent",
+     "answer_multiplicity": "single-verifiable",
+     "coverage_determinability": "hard"
+    },
+    "n": 7
+   }
+  ],
+  "fully_emergent_and_coverage_hard": 50
+ },
+ "search_tools": {
+  "tools_stated": 428,
+  "tools_not_stated": 53,
+  "n": 481,
+  "by_tool": {
+   "web-search-api": 216,
+   "local-retriever": 175,
+   "web-browser": 122,
+   "code-execution": 96,
+   "domain-api": 85,
+   "multimodal-viewer": 84,
+   "agent-choice": 57,
+   "file-reader": 56,
+   "not stated by the paper": 53,
+   "structured-query": 51
+  },
+  "by_access": {
+   "open-web": 137,
+   "fixed-corpus": 125,
+   "mixed": 124,
+   "not-stated": 51,
+   "structured-database": 27,
+   "simulated-or-sandboxed-web": 12,
+   "single-site": 5
+  },
+  "tools_read_from": {
+   "fulltext": 444,
+   "abstract": 36,
+   "none": 1
+  },
+  "task_summaries": 480,
+  "summaries_read_from": {
+   "fulltext": 442,
+   "abstract": 38,
+   "none": 1
+  }
+ },
+ "difficulty_properties": {
+  "n_phrases": 1540,
+  "n_papers": 465,
+  "ring_n": 481,
+  "papers_with_no_property_recorded": 16,
+  "by_family_phrases": {
+   "F14": 179,
+   "F06": 171,
+   "F15": 121,
+   "F07": 105,
+   "F08": 104,
+   "F09": 81,
+   "F04": 77,
+   "F03": 63,
+   "F17": 63,
+   "F18": 63,
+   "F13": 60,
+   "F10": 59,
+   "other": 57,
+   "F01": 56,
+   "F05": 55,
+   "F16": 47,
+   "F12": 46,
+   "F02": 43,
+   "F19": 37,
+   "F20": 31,
+   "F11": 22
+  },
+  "by_family_papers": {
+   "F14": 187,
+   "F06": 168,
+   "F15": 130,
+   "F07": 127,
+   "F04": 106,
+   "F08": 97,
+   "F09": 96,
+   "F18": 91,
+   "F17": 76,
+   "F10": 73,
+   "F13": 72,
+   "F16": 70,
+   "F01": 69,
+   "F05": 67,
+   "F03": 61,
+   "other": 55,
+   "F02": 54,
+   "F20": 48,
+   "F12": 47,
+   "F19": 41,
+   "F11": 27,
+   "no property recorded": 16
+  },
+  "other_pct_of_phrases": 3.7,
+  "other_papers": 55,
+  "other_pct_of_papers": 11.8
+ },
+ "evidence_depth_and_coverage": {
+  "evidence_depth": {
+   "ring": 481,
+   "headline_tier": 211,
+   "relevant_tier": 270,
+   "fulltext_requested": 164,
+   "fulltext_reached": 444,
+   "fulltext_unreachable": 19,
+   "abstract_only_papers": 37,
+   "rows_total": 4114,
+   "rows_fulltext": 1152,
+   "rows_abstract": 2960
+  },
+  "modality_yield": {
+   "citation-forward": {
+    "candidates": 1689,
+    "core": 240,
+    "yield_pct": 14.2
+   },
+   "asta-find": {
+    "candidates": 907,
+    "core": 229,
+    "yield_pct": 25.2
+   },
+   "prior-corpus:long-horizon": {
+    "candidates": 387,
+    "core": 141,
+    "yield_pct": 36.4
+   },
+   "asta-find-diligent": {
+    "candidates": 918,
+    "core": 121,
+    "yield_pct": 13.2
+   },
+   "registry": {
+    "candidates": 96,
+    "core": 81,
+    "yield_pct": 84.4
+   },
+   "prior-corpus:memory": {
+    "candidates": 295,
+    "core": 62,
+    "yield_pct": 21.0
+   },
+   "gap-survey": {
+    "candidates": 114,
+    "core": 44,
+    "yield_pct": 38.6
+   },
+   "parametric": {
+    "candidates": 88,
+    "core": 27,
+    "yield_pct": 30.7
+   },
+   "registry-trec": {
+    "candidates": 13,
+    "core": 7,
+    "yield_pct": 53.8
+   },
+   "survey-refs": {
+    "candidates": 11,
+    "core": 1,
+    "yield_pct": 9.1
+   }
+  },
+  "unreachable_fulltext": [
+   {
+    "corpusId": "280527770",
+    "title": "The 2nd Automated Verification of Textual Claims (AVeriTeC) Shared Task: Open-weights, Reproducible and Efficient Systems",
+    "arxiv": null
+   },
+   {
+    "corpusId": "280984686",
+    "title": "MMSearch-Plus: A Simple Yet Challenging Benchmark for Multimodal Browsing Agents",
+    "arxiv": null
+   },
+   {
+    "corpusId": "282384249",
+    "title": "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite",
+    "arxiv": "2510.21652"
+   },
+   {
+    "corpusId": "284311711",
+    "title": "RW-Post: Auditable Evidence-Grounded Multimodal Fact-Checking in the Wild",
+    "arxiv": "2605.10357"
+   },
+   {
+    "corpusId": "285049422",
+    "title": "DEER: A Comprehensive and Reliable Benchmark for Deep-Research Expert Reports",
+    "arxiv": null
+   },
+   {
+    "corpusId": "285049590",
+    "title": "Video-BrowseComp: Benchmarking Agentic Video Research on Open Web",
+    "arxiv": null
+   },
+   {
+    "corpusId": "285300242",
+    "title": "Synthesizing scientific literature with retrieval-augmented language models",
+    "arxiv": null
+   },
+   {
+    "corpusId": "285615060",
+    "title": "ScholarGym: Benchmarking Deep Research Workflows on Academic Literature Retrieval",
+    "arxiv": null
+   },
+   {
+    "corpusId": "286167182",
+    "title": "Tip-of-the-Tongue Search in the Wild: Analyzing Human and LLM Performance and Success Factors on Complex Search Requests",
+    "arxiv": null
+   },
+   {
+    "corpusId": "286684150",
+    "title": "OmniBench: A Comprehensive Benchmark Integrating Real-World, Time-sensitive, and Multi-Hop Questions with a Multi-Dimensional Hybrid Evaluation Framework",
+    "arxiv": null
+   },
+   {
+    "corpusId": "287768549",
+    "title": "TREC iKAT 2025: The Interactive Knowledge Assistance Track Overview",
+    "arxiv": null
+   },
+   {
+    "corpusId": "289390851",
+    "title": "BrowseComp-Plus: A Fair and Disentangled Evaluation Benchmark for Deep Search Agents",
+    "arxiv": null
+   },
+   {
+    "corpusId": "289754801",
+    "title": "AnalystBench: Benchmarking professional long-form report generation with web-mined multimodal tasks",
+    "arxiv": null
+   },
+   {
+    "corpusId": "290208538",
+    "title": "DeepResearchGym: A Free, Transparent, and Reproducible Sandbox for Deep Research",
+    "arxiv": null
+   },
+   {
+    "corpusId": "290965624",
+    "title": "VistaHop: Benchmarking Multi-hop Visual Reasoning for Visual DeepSearch",
+    "arxiv": null
+   },
+   {
+    "corpusId": "291743570",
+    "title": "A Rigorous Benchmark with Multidimensional Evaluation for Deep Research Agents: From Answers to Reports",
+    "arxiv": null
+   },
+   {
+    "corpusId": "291906505",
+    "title": "BioSecBench-Function: A Verifiable Benchmark for Reasoning about Biological Function from Experimental Data",
+    "arxiv": null
+   },
+   {
+    "corpusId": "web:trec-dragun-2024",
+    "title": null,
+    "arxiv": null
+   },
+   {
+    "corpusId": "web:trec-dragun-2025",
+    "title": null,
+    "arxiv": null
+   }
+  ]
+ }
+}

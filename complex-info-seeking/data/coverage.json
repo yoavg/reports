@@ -1,0 +1,163 @@
+{
+ "evidence_depth": {
+  "ring": 481,
+  "headline_tier": 211,
+  "relevant_tier": 270,
+  "fulltext_requested": 164,
+  "fulltext_reached": 444,
+  "fulltext_unreachable": 19,
+  "abstract_only_papers": 37,
+  "rows_total": 4114,
+  "rows_fulltext": 1152,
+  "rows_abstract": 2960
+ },
+ "modality_yield": {
+  "citation-forward": {
+   "candidates": 1689,
+   "core": 240,
+   "yield_pct": 14.2
+  },
+  "asta-find": {
+   "candidates": 907,
+   "core": 229,
+   "yield_pct": 25.2
+  },
+  "prior-corpus:long-horizon": {
+   "candidates": 387,
+   "core": 141,
+   "yield_pct": 36.4
+  },
+  "asta-find-diligent": {
+   "candidates": 918,
+   "core": 121,
+   "yield_pct": 13.2
+  },
+  "registry": {
+   "candidates": 96,
+   "core": 81,
+   "yield_pct": 84.4
+  },
+  "prior-corpus:memory": {
+   "candidates": 295,
+   "core": 62,
+   "yield_pct": 21.0
+  },
+  "gap-survey": {
+   "candidates": 114,
+   "core": 44,
+   "yield_pct": 38.6
+  },
+  "parametric": {
+   "candidates": 88,
+   "core": 27,
+   "yield_pct": 30.7
+  },
+  "registry-trec": {
+   "candidates": 13,
+   "core": 7,
+   "yield_pct": 53.8
+  },
+  "survey-refs": {
+   "candidates": 11,
+   "core": 1,
+   "yield_pct": 9.1
+  }
+ },
+ "unreachable_fulltext": [
+  {
+   "corpusId": "280527770",
+   "title": "The 2nd Automated Verification of Textual Claims (AVeriTeC) Shared Task: Open-weights, Reproducible and Efficient Systems",
+   "arxiv": null
+  },
+  {
+   "corpusId": "280984686",
+   "title": "MMSearch-Plus: A Simple Yet Challenging Benchmark for Multimodal Browsing Agents",
+   "arxiv": null
+  },
+  {
+   "corpusId": "282384249",
+   "title": "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite",
+   "arxiv": "2510.21652"
+  },
+  {
+   "corpusId": "284311711",
+   "title": "RW-Post: Auditable Evidence-Grounded Multimodal Fact-Checking in the Wild",
+   "arxiv": "2605.10357"
+  },
+  {
+   "corpusId": "285049422",
+   "title": "DEER: A Comprehensive and Reliable Benchmark for Deep-Research Expert Reports",
+   "arxiv": null
+  },
+  {
+   "corpusId": "285049590",
+   "title": "Video-BrowseComp: Benchmarking Agentic Video Research on Open Web",
+   "arxiv": null
+  },
+  {
+   "corpusId": "285300242",
+   "title": "Synthesizing scientific literature with retrieval-augmented language models",
+   "arxiv": null
+  },
+  {
+   "corpusId": "285615060",
+   "title": "ScholarGym: Benchmarking Deep Research Workflows on Academic Literature Retrieval",
+   "arxiv": null
+  },
+  {
+   "corpusId": "286167182",
+   "title": "Tip-of-the-Tongue Search in the Wild: Analyzing Human and LLM Performance and Success Factors on Complex Search Requests",
+   "arxiv": null
+  },
+  {
+   "corpusId": "286684150",
+   "title": "OmniBench: A Comprehensive Benchmark Integrating Real-World, Time-sensitive, and Multi-Hop Questions with a Multi-Dimensional Hybrid Evaluation Framework",
+   "arxiv": null
+  },
+  {
+   "corpusId": "287768549",
+   "title": "TREC iKAT 2025: The Interactive Knowledge Assistance Track Overview",
+   "arxiv": null
+  },
+  {
+   "corpusId": "289390851",
+   "title": "BrowseComp-Plus: A Fair and Disentangled Evaluation Benchmark for Deep Search Agents",
+   "arxiv": null
+  },
+  {
+   "corpusId": "289754801",
+   "title": "AnalystBench: Benchmarking professional long-form report generation with web-mined multimodal tasks",
+   "arxiv": null
+  },
+  {
+   "corpusId": "290208538",
+   "title": "DeepResearchGym: A Free, Transparent, and Reproducible Sandbox for Deep Research",
+   "arxiv": null
+  },
+  {
+   "corpusId": "290965624",
+   "title": "VistaHop: Benchmarking Multi-hop Visual Reasoning for Visual DeepSearch",
+   "arxiv": null
+  },
+  {
+   "corpusId": "291743570",
+   "title": "A Rigorous Benchmark with Multidimensional Evaluation for Deep Research Agents: From Answers to Reports",
+   "arxiv": null
+  },
+  {
+   "corpusId": "291906505",
+   "title": "BioSecBench-Function: A Verifiable Benchmark for Reasoning about Biological Function from Experimental Data",
+   "arxiv": null
+  },
+  {
+   "corpusId": "web:trec-dragun-2024",
+   "title": null,
+   "arxiv": null
+  },
+  {
+   "corpusId": "web:trec-dragun-2025",
+   "title": null,
+   "arxiv": null
+  }
+ ]
+}

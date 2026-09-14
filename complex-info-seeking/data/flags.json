@@ -1,0 +1,274 @@
+{
+ "flags": {
+  "step_dependency": {
+   "label": "step dependency",
+   "n": 481,
+   "distribution": {
+    "adaptive": 181,
+    "fixed-chain": 144,
+    "not-determinable": 85,
+    "mixed": 52,
+    "independent": 19
+   },
+   "not_determinable": 85,
+   "not_determinable_pct": 17.7,
+   "settled_by_depth": {
+    "abstract": 406,
+    "fulltext": 75
+   },
+   "settled_by_fulltext": 75,
+   "by_tier": {
+    "relevant": {
+     "adaptive": 98,
+     "fixed-chain": 85,
+     "not-determinable": 57,
+     "mixed": 19,
+     "independent": 11
+    },
+    "in": {
+     "adaptive": 83,
+     "fixed-chain": 59,
+     "mixed": 33,
+     "not-determinable": 28,
+     "independent": 8
+    }
+   }
+  },
+  "decomposition_known_upfront": {
+   "label": "decomposition known upfront",
+   "n": 481,
+   "distribution": {
+    "partially-emergent": 152,
+    "not-determinable": 120,
+    "enumerable-at-start": 115,
+    "fully-emergent": 94
+   },
+   "not_determinable": 120,
+   "not_determinable_pct": 24.9,
+   "settled_by_depth": {
+    "abstract": 382,
+    "fulltext": 99
+   },
+   "settled_by_fulltext": 99,
+   "by_tier": {
+    "relevant": {
+     "not-determinable": 95,
+     "partially-emergent": 72,
+     "enumerable-at-start": 64,
+     "fully-emergent": 39
+    },
+    "in": {
+     "partially-emergent": 80,
+     "fully-emergent": 55,
+     "enumerable-at-start": 51,
+     "not-determinable": 25
+    }
+   }
+  },
+  "answer_multiplicity": {
+   "label": "answer multiplicity",
+   "n": 481,
+   "distribution": {
+    "single-verifiable": 241,
+    "open-ended": 78,
+    "set-valued": 64,
+    "not-determinable": 46,
+    "multiple-defensible": 46,
+    "ranked": 6
+   },
+   "not_determinable": 46,
+   "not_determinable_pct": 9.6,
+   "settled_by_depth": {
+    "abstract": 465,
+    "fulltext": 16
+   },
+   "settled_by_fulltext": 16,
+   "by_tier": {
+    "relevant": {
+     "single-verifiable": 138,
+     "open-ended": 39,
+     "not-determinable": 36,
+     "set-valued": 27,
+     "multiple-defensible": 24,
+     "ranked": 6
+    },
+    "in": {
+     "single-verifiable": 103,
+     "open-ended": 39,
+     "set-valued": 37,
+     "multiple-defensible": 22,
+     "not-determinable": 10
+    }
+   }
+  },
+  "coverage_determinability": {
+   "label": "coverage determinability",
+   "n": 481,
+   "distribution": {
+    "hard": 144,
+    "not-determinable": 127,
+    "knowable": 123,
+    "estimable": 87
+   },
+   "not_determinable": 127,
+   "not_determinable_pct": 26.4,
+   "settled_by_depth": {
+    "abstract": 405,
+    "fulltext": 76
+   },
+   "settled_by_fulltext": 76,
+   "by_tier": {
+    "relevant": {
+     "not-determinable": 110,
+     "knowable": 61,
+     "hard": 53,
+     "estimable": 46
+    },
+    "in": {
+     "hard": 91,
+     "knowable": 62,
+     "estimable": 41,
+     "not-determinable": 17
+    }
+   }
+  }
+ },
+ "combinations_top": [
+  {
+   "values": {
+    "step_dependency": "not-determinable",
+    "decomposition_known_upfront": "not-determinable",
+    "answer_multiplicity": "not-determinable",
+    "coverage_determinability": "not-determinable"
+   },
+   "n": 24
+  },
+  {
+   "values": {
+    "step_dependency": "fixed-chain",
+    "decomposition_known_upfront": "enumerable-at-start",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "knowable"
+   },
+   "n": 22
+  },
+  {
+   "values": {
+    "step_dependency": "adaptive",
+    "decomposition_known_upfront": "fully-emergent",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "hard"
+   },
+   "n": 20
+  },
+  {
+   "values": {
+    "step_dependency": "adaptive",
+    "decomposition_known_upfront": "partially-emergent",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "hard"
+   },
+   "n": 16
+  },
+  {
+   "values": {
+    "step_dependency": "adaptive",
+    "decomposition_known_upfront": "not-determinable",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "not-determinable"
+   },
+   "n": 12
+  },
+  {
+   "values": {
+    "step_dependency": "not-determinable",
+    "decomposition_known_upfront": "not-determinable",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "not-determinable"
+   },
+   "n": 11
+  },
+  {
+   "values": {
+    "step_dependency": "adaptive",
+    "decomposition_known_upfront": "partially-emergent",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "knowable"
+   },
+   "n": 11
+  },
+  {
+   "values": {
+    "step_dependency": "fixed-chain",
+    "decomposition_known_upfront": "enumerable-at-start",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "not-determinable"
+   },
+   "n": 9
+  },
+  {
+   "values": {
+    "step_dependency": "adaptive",
+    "decomposition_known_upfront": "partially-emergent",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "not-determinable"
+   },
+   "n": 8
+  },
+  {
+   "values": {
+    "step_dependency": "adaptive",
+    "decomposition_known_upfront": "fully-emergent",
+    "answer_multiplicity": "open-ended",
+    "coverage_determinability": "hard"
+   },
+   "n": 8
+  },
+  {
+   "values": {
+    "step_dependency": "adaptive",
+    "decomposition_known_upfront": "fully-emergent",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "estimable"
+   },
+   "n": 7
+  },
+  {
+   "values": {
+    "step_dependency": "not-determinable",
+    "decomposition_known_upfront": "not-determinable",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "knowable"
+   },
+   "n": 7
+  },
+  {
+   "values": {
+    "step_dependency": "adaptive",
+    "decomposition_known_upfront": "fully-emergent",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "knowable"
+   },
+   "n": 7
+  },
+  {
+   "values": {
+    "step_dependency": "mixed",
+    "decomposition_known_upfront": "partially-emergent",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "hard"
+   },
+   "n": 7
+  },
+  {
+   "values": {
+    "step_dependency": "fixed-chain",
+    "decomposition_known_upfront": "partially-emergent",
+    "answer_multiplicity": "single-verifiable",
+    "coverage_determinability": "hard"
+   },
+   "n": 7
+  }
+ ],
+ "fully_emergent_and_coverage_hard": 50
+}

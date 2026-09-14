@@ -4,6 +4,69 @@ Research reports and their underlying data.
 
 **Read them in the browser: <https://yoavg.github.io/reports/>**
 
+## complex-info-seeking (2026-09-14)
+
+A corpus survey of benchmarks, datasets, task suites and environments published in **2025–2026**
+whose tasks **cannot be answered by a single search** and require decomposition into multiple
+steps. **481 artifacts**, drawn from 3,349 relevance-judged candidates, each read for four
+properties of the search — whether later steps depend on earlier ones, whether the decomposition
+is knowable up front, whether several answers can be right, and whether an agent can tell when it
+has found everything — plus what it must actually do and what it is allowed to search with.
+
+The decisive test is **decomposition, not difficulty**: a task answerable by one well-formed query
+is out, and breadth tasks (enumerate N entities meeting a criterion) are in. This deliberately
+re-admits ~130 artifacts that the sibling `long-horizon-agent-benchmarks` corpus excluded for being
+single-goal — one research question decomposed into sub-queries is exactly the target here.
+
+| file | what it is |
+|---|---|
+| [`complex-info-seeking/index.html`](complex-info-seeking/index.html) | **The report** — five questions answered, evidence quoted in the prose, coverage boundary |
+| [`complex-info-seeking/catalog.html`](complex-info-seeking/catalog.html) | **The catalogue** — all 481 rows, sortable and filterable by tool, access, kind, modality and tier |
+| `complex-info-seeking/data/catalog.csv` | all 481 rows with task summaries, tool sets, citation counts and links — open in a spreadsheet |
+| `complex-info-seeking/data/catalog.json` | the same rows with every verbatim evidence span |
+| `complex-info-seeking/data/catalog-aggregates.json` | every number the report quotes, script-computed |
+| `complex-info-seeking/data/charts.json` | every chart series exactly as rendered |
+| `complex-info-seeking/data/synthesis.json` | for each of the 9 pooled claims: because / unless / basis note |
+| `complex-info-seeking/data/tools.json` | the search-tool and access tallies |
+| `complex-info-seeking/data/flags.json` | the four property distributions, split by tier and evidence depth |
+| `complex-info-seeking/data/coverage-verdict.md` | what the corpus does not cover, with every estimator used or gated |
+| `complex-info-seeking/data/retrieval-filter-probe.md` | the measured false-negative rate of the retrieval filter (0%, ≤1.7%) |
+| `complex-info-seeking/data/judge-calibration.md` | salt-item agreement across the judging fleet (94%) |
+
+### What it found
+
+- **Half the corpus still resolves to a single right answer.** 241 of 481 artifacts are
+  `single-verifiable` — the decomposition is in the *search*, not the answer. Only 46 admit
+  several defensible answers and 78 are open-ended.
+- **For 144 artifacts an agent has no reliable stopping signal** (`coverage_determinability: hard`),
+  against 123 where completeness is knowable. This is the property the field handles worst.
+- **Decomposition is usually discovered, not planned.** 152 artifacts are `partially-emergent` and
+  94 `fully-emergent`, against 115 whose sub-questions can be enumerated before searching.
+- **89% state what the agent may search with** (428 of 481): web search APIs (216), retrieval over
+  a shipped corpus (175), browsers (122), code execution (96). Access splits open-web 137 /
+  fixed-corpus 125 / mixed 124.
+- **The two most interesting properties are the least directly evidenced.** Decomposition and
+  coverage carry 28% and 26% stretch-fit rows; their warrants in `synthesis.json` name the
+  confounds, including that "known upfront" is sometimes answered about the benchmark's *designer*
+  rather than the solving agent.
+- **20 further difficulty properties** were open-coded from the papers themselves, each labelled
+  by whether the extraction prompt named it or it emerged unprompted.
+
+### Caveats
+
+- **Full-text depth is uneven for the four property columns.** Only the 211 dedicated benchmarks
+  were re-read at body depth for those; the 270 task sets shipped alongside a method carry
+  abstract-only evidence there. The report reports the two tiers separately rather than pooling.
+- **The tools column is a lower bound.** It often records what a paper's own reference agent was
+  built with, not what the benchmark formally permits — the two come apart for the 137 open-web
+  artifacts. 53 artifacts state nothing, recorded as "not stated" rather than guessed.
+- **Between 18% and 26% of each property is `not-determinable`** — recorded where a paper does not
+  say, never inferred. One artifact has neither an abstract nor retrievable full text and is
+  marked unreadable, which is kept distinct from "not stated".
+- **Citation counts move.** They were read on 2026-09-14 and that date ships with the column.
+- **Era is strictly 2025–2026.** Pre-2025 antecedents (HotpotQA, MuSiQue, FanOutQA, BrowseComp
+  lineage) are context, not members. Non-English coverage is undetermined: no sweep targeted it.
+
 ## long-horizon-agent-benchmarks (2026-09-14)
 
 A corpus survey of benchmarks, datasets, environments and scenario suites published in

@@ -1,0 +1,37 @@
+{
+ "tools_stated": 428,
+ "tools_not_stated": 53,
+ "n": 481,
+ "by_tool": {
+  "web-search-api": 216,
+  "local-retriever": 175,
+  "web-browser": 122,
+  "code-execution": 96,
+  "domain-api": 85,
+  "multimodal-viewer": 84,
+  "agent-choice": 57,
+  "file-reader": 56,
+  "not stated by the paper": 53,
+  "structured-query": 51
+ },
+ "by_access": {
+  "open-web": 137,
+  "fixed-corpus": 125,
+  "mixed": 124,
+  "not-stated": 51,
+  "structured-database": 27,
+  "simulated-or-sandboxed-web": 12,
+  "single-site": 5
+ },
+ "tools_read_from": {
+  "fulltext": 444,
+  "abstract": 36,
+  "none": 1
+ },
+ "task_summaries": 480,
+ "summaries_read_from": {
+  "fulltext": 442,
+  "abstract": 38,
+  "none": 1
+ }
+}
